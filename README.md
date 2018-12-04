@@ -1,4 +1,4 @@
-# MJ广告SDk－－接入说明文档 V1.0
+# MJ广告SDK－－接入说明文档 V1.0
 ## 1. SDK集成
 
 ```
@@ -205,6 +205,7 @@ feedAdAdapter.refresh();
 
 
 > 上述广告形式，都需要独立的 posAdId
+>
 > 上述广告形式，OnMJAdListener 接口为回调监听，如无需要，可传null
 
 ### 2.6 浮窗广告
