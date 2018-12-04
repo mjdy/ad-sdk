@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_bannder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"></LinearLayout>
+
+    <com.mobjump.mjadsdk.view.MJBannerView
+        android:id="@+id/banner_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.mobjump.mjadsdk.view.MJBannerView>
+
+    <Button
+        android:id="@+id/btn_splash"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show SplashAD" />
+
+
+    <Button
+        android:id="@+id/btn_interteristal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show InterteristalPosID" />
+
+    <Button
+        android:id="@+id/btn_banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show BANNER" />
+
+    <Button
+        android:id="@+id/btn_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show Info List" />
+
+    <Button
+        android:id="@+id/btn_float"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show Float ad" />
+</LinearLayout>
