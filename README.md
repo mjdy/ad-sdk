@@ -3,7 +3,7 @@
 
 ```
 // 必选
-implementation 'com.mjdy.ad:base:1.0.0' 
+implementation 'com.mjdy.ad:base:1.0.2'
 
 // 可选
 implementation 'com.mjdy.ad:bd:1.0.0'   // 百度
@@ -217,3 +217,11 @@ TO DO
 SDK已经处理，无需额外操作
 ### 3.2 Sample
 本工程为sample工程，可作为集成参考
+
+
+# 更改记录
+
+## 1.0.2
+修复了加载异常的bug
+## 1.0.0
+sdk发布，提供了 开屏，插屏，banner，信息流的广告
