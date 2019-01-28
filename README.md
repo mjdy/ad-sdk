@@ -3,7 +3,7 @@
 
 ```
 // 必选
-implementation 'com.mjdy.ad:base:1.0.2'
+implementation 'com.mjdy.ad:base:1.0.4'
 
 // 可选
 implementation 'com.mjdy.ad:bd:1.0.0'   // 百度
@@ -220,7 +220,13 @@ SDK已经处理，无需额外操作
 
 
 # 更改记录
-
+## 1.0.4
+修复banner广告文字提示重复的bug
+## 1.0.3
+修复了初始化延迟导致banner不显示的bug
+修复了由于权限问题导致信息流崩溃的bug
+banner加入广告文字提示
+添加里中文注释
 ## 1.0.2
 修复了加载异常的bug
 ## 1.0.0

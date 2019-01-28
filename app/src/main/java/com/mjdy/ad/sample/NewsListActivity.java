@@ -21,6 +21,7 @@ import java.util.List;
 
 /**
  * Created by cx on 11/16/18.
+ * 信息流广告演示demo
  */
 public class NewsListActivity extends Activity {
 
@@ -28,13 +29,14 @@ public class NewsListActivity extends Activity {
         context.startActivity(new Intent(context, NewsListActivity.class));
     }
 
-    RecyclerView rv_content;
+    RecyclerView rv_content;  // 目前仅支持 RecyclerView
 
 
-    ArrayList<String> data = new ArrayList<>();
-    NormalAdapter adapter;
+    ArrayList<String> data = new ArrayList<>();  // 需要显示的数据
 
-    FeedAdAdapter feedAdAdapter;
+    NormalAdapter adapter;  // 开发者自己的adapter
+
+    FeedAdAdapter feedAdAdapter;  // 广告sdk封装的adapter
 
 
     @Override
@@ -47,10 +49,11 @@ public class NewsListActivity extends Activity {
         findViewById(R.id.btn_load_more).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                // 加载更多
                 for (int i = 0; i < 20; i++) {
                     data.add("load more " + i);
                 }
-                // when list changed
+                // when list changed 数据更改时要调用此方法刷新数据
                 feedAdAdapter.refresh();
             }
         });
@@ -58,12 +61,13 @@ public class NewsListActivity extends Activity {
         findViewById(R.id.btn_refresh).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                // 模拟下拉刷新
                 data.clear();
                 for (int i = 0; i < 20; i++) {
                     data.add("refresh " + i);
 
                 }
-                // when list changed
+                // when list changed 数据更改时要调用此方法刷新数据
                 feedAdAdapter.refresh();
             }
         });
@@ -107,10 +111,15 @@ public class NewsListActivity extends Activity {
 
     @Override
     protected void onDestroy() {
-        feedAdAdapter.destroy();
+        feedAdAdapter.destroy(); // 为了更好的回收内存，建议在界面销毁时调用此方法
         super.onDestroy();
     }
 
+    /**
+     *  封装adapter共2步
+     *  1. 实现 FeedAdAdapter.IGetDataList
+     *  2. getList 中返回原始数据列表
+     */
     public class NormalAdapter extends RecyclerView.Adapter<NormalAdapter.VH> implements FeedAdAdapter.IGetDataList {
 
 

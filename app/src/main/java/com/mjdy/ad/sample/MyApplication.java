@@ -9,6 +9,7 @@ public class MyApplication extends Application {
     public void onCreate() {
         super.onCreate();
 
+        // 初始化广告sdk，最好放在程序入口，比如application里
         MJAd.init(this, "2");  // init ad sdk
     }
 }
