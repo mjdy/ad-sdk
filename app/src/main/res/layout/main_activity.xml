@@ -43,9 +43,4 @@
         android:layout_height="wrap_content"
         android:text="Show Info List" />
 
-    <Button
-        android:id="@+id/btn_float"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Show Float ad" />
 </LinearLayout>

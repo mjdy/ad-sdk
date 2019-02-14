@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
     Activity activity;
     MJBannerView banner_view;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,19 +41,22 @@ public class MainActivity extends AppCompatActivity {
                 MJAd.showSplashAd(activity, "2", new OnMJAdListener() {
                     @Override
                     public void onAdLoadSuccess() {
+                        LogUtil.d("splash ad success");
                     }
 
                     @Override
                     public void onAdLoadFail(String failCode) {
+                        LogUtil.d("splash ad fail " + failCode);
                     }
 
                     @Override
                     public void onAdClicked() {
-
+                        LogUtil.d("splash ad click ");
                     }
 
                     @Override
                     public void onAdDismiss() {
+                        LogUtil.d("splash ad dismiss");
 
                     }
                 });
@@ -68,21 +72,24 @@ public class MainActivity extends AppCompatActivity {
                 MJAd.showInterstitialAd(activity, "3", new OnMJAdListener() {
                     @Override
                     public void onAdLoadSuccess() {
-
+                        LogUtil.d("interteristal ad success");
                     }
 
                     @Override
                     public void onAdLoadFail(String i) {
+                        LogUtil.d("interteristal ad fail " + i);
 
                     }
 
                     @Override
                     public void onAdClicked() {
+                        LogUtil.d("interteristal ad click");
 
                     }
 
                     @Override
                     public void onAdDismiss() {
+                        LogUtil.d("interteristal ad dismiss");
 
                     }
                 });
@@ -99,21 +106,25 @@ public class MainActivity extends AppCompatActivity {
                 MJAd.showBannerAd(activity, banner_view, "4", new OnMJAdListener() {
                     @Override
                     public void onAdLoadSuccess() {
+                        LogUtil.d("banner ad success");
 
                     }
 
                     @Override
                     public void onAdLoadFail(String failCode) {
+                        LogUtil.d("banner ad fail " + failCode);
 
                     }
 
                     @Override
                     public void onAdClicked() {
+                        LogUtil.d("banner ad click");
 
                     }
 
                     @Override
                     public void onAdDismiss() {
+                        LogUtil.d("banner ad dismiss");
 
                     }
                 });
@@ -126,18 +137,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 NewsListActivity.launch(activity);
-            }
-        });
-
-
-        // show float AD , To be continue...   悬浮窗广告
-
-        findViewById(R.id.btn_float).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Toast.makeText(MainActivity.this, "Will Come Soon ...", Toast.LENGTH_SHORT).show();
-
             }
         });
 

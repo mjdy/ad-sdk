@@ -88,21 +88,25 @@ public class NewsListActivity extends Activity {
         MJAd.showFeedAd(this, feedAdAdapter, "5", new OnMJAdListener() {
             @Override
             public void onAdLoadSuccess() {
+                LogUtil.d("feed ad success");
 
             }
 
             @Override
             public void onAdLoadFail(String fail) {
+                LogUtil.d("feed ad fail "+fail);
 
             }
 
             @Override
             public void onAdClicked() {
+                LogUtil.d("feed ad click");
 
             }
 
             @Override
             public void onAdDismiss() {
+                LogUtil.d("feed ad dismiss");
 
             }
         });
