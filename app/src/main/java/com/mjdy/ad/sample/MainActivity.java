@@ -11,6 +11,7 @@ import android.widget.Toast;
 
 import com.mobjump.mjadsdk.MJAd;
 import com.mobjump.mjadsdk.adline.interfaces.OnMJAdListener;
+import com.mobjump.mjadsdk.bean.ErrorModel;
 import com.mobjump.mjadsdk.view.MJBannerView;
 
 public class MainActivity extends AppCompatActivity {
@@ -45,8 +46,8 @@ public class MainActivity extends AppCompatActivity {
                     }
 
                     @Override
-                    public void onAdLoadFail(String failCode) {
-                        LogUtil.d("splash ad fail " + failCode);
+                    public void onAdLoadFail(ErrorModel errorModel) {
+                        LogUtil.d("splash ad fail " + errorModel);
                     }
 
                     @Override
@@ -76,8 +77,8 @@ public class MainActivity extends AppCompatActivity {
                     }
 
                     @Override
-                    public void onAdLoadFail(String i) {
-                        LogUtil.d("interteristal ad fail " + i);
+                    public void onAdLoadFail(ErrorModel errorModel) {
+                        LogUtil.d("interteristal ad fail " + errorModel);
 
                     }
 
@@ -111,8 +112,8 @@ public class MainActivity extends AppCompatActivity {
                     }
 
                     @Override
-                    public void onAdLoadFail(String failCode) {
-                        LogUtil.d("banner ad fail " + failCode);
+                    public void onAdLoadFail(ErrorModel errorModel) {
+                        LogUtil.d("banner ad fail " + errorModel);
 
                     }
 

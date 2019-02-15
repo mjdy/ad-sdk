@@ -14,6 +14,7 @@ import android.widget.TextView;
 
 import com.mobjump.mjadsdk.MJAd;
 import com.mobjump.mjadsdk.adline.interfaces.OnMJAdListener;
+import com.mobjump.mjadsdk.bean.ErrorModel;
 import com.mobjump.mjadsdk.view.FeedAdAdapter;
 
 import java.util.ArrayList;
@@ -93,8 +94,8 @@ public class NewsListActivity extends Activity {
             }
 
             @Override
-            public void onAdLoadFail(String fail) {
-                LogUtil.d("feed ad fail "+fail);
+            public void onAdLoadFail(ErrorModel errorModel) {
+                LogUtil.d("feed ad fail "+errorModel);
 
             }
 

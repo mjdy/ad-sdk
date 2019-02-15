@@ -1,9 +1,9 @@
-# MJ广告SDK－－接入说明文档 V1.0.5
+# MJ广告SDK－－接入说明文档 V1.0.7
 ## 1. SDK集成
 
 ```
 // 必选
-implementation 'com.mjdy.ad:base:1.0.5'
+implementation 'com.mjdy.ad:base:1.0.7'
 
 // 可选
 implementation 'com.mjdy.ad:bd:1.0.0'   // 百度
@@ -218,11 +218,59 @@ SDK已经处理，无需额外操作
 本工程为sample工程，可作为集成参考
 
 ### 3.3 已知问题
-sample里的百度的开屏广告请求失败，更换为正式id后应该正常
+1. sample里的百度的开屏广告请求失败，更换为正式id后应该正常
+2. 第一次运行sample ，需要获取百度or广点通的相关数据，在数据获取成功前，请求广告会失败。网络正常的情况下，一般5秒后即可
 
+### 3.4 错误码
+
+**onAdLoadFail** 方法里提供了 ```ErrorModel``` 参数。
+
+```
+		@Override
+        public void onAdLoadFail(ErrorModel errorModel) {
+            errorModel.platform;    // 广告平台
+	        errorModel.code;        // 错误码
+	        errorModel.message;     // 错误信息
+        }
+```
+
+
+
+
+#### 通用错误码
+
+sdk提供了 **ErrorModel** 类 , 错误码常量可通过  ```ErrorModel.ERROR_LOADING ``` 获取
+
+   ID   | 错误码 | 错误说明
+---| --- | ---
+ERROR_LOADING | 1001 |  sdk正在加载中，需等待sdk加载完毕
+ERROR\_LOADED_FAIL | 1002 | sdk加载失败，建议重启app
+ERROR\_POSID_NULL | 1003 | 广告位id未空
+ERROR_PERMISSION | 1004 | 没有给予PHONE or STORAGE  权限
+ERROR\_POSID_ERROR | 1005 |  广告位id错误
+
+
+#### 平台码
+sdk提供了 **ErrorModel** 类 , 平台码常量可通过  ```ErrorModel.PLATFORM_GDT ``` 获取
+
+   ID   | 平台码 | 平台说明
+---| --- | ---
+PLATFORM_UNKOWN | -1 |  用于显示通用错误
+PLATFORM_GDT | 1 | 广点通
+PLATFORM_BD | 2 | 百度
+PLATFORM_QSZ | 3 | 启示者
+
+#### 相应平台错误码
+请参见具体平台的文档。如 广点通sdk文档 or 百度sdk文档
 
 
 # 更改记录
+
+## 1.0.7
+1. 更改onAdLoadFail参数，增加广告平台，错误码，错误信息字段
+
+## 1.0.6
+1. 如果未赋予权限，会调用onFail，打印log
 
 ## 1.0.5
 1. 完善了上报机制
