@@ -88,7 +88,7 @@ MJAd.init("this","yourAppId");
 在代码里
 
 ```
-		 MJBannerView banner_view = findViewById(R.id.banner_view);
+         MJBannerView banner_view = findViewById(R.id.banner_view);
 		  
          MJAd.showBannerAd(activity, banner_view, "podAdId", new OnHTAdListener() {
                     @Override
@@ -226,9 +226,9 @@ SDK已经处理，无需额外操作
 **onAdLoadFail** 方法里提供了 ```ErrorModel``` 参数。
 
 ```
-		@Override
+	@Override
         public void onAdLoadFail(ErrorModel errorModel) {
-            errorModel.platform;    // 广告平台
+                errorModel.platform;    // 广告平台
 	        errorModel.code;        // 错误码
 	        errorModel.message;     // 错误信息
         }
