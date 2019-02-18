@@ -1,9 +1,9 @@
-# MJ广告SDK－－接入说明文档 V1.0.7
+# MJ广告SDK－－接入说明文档 V1.0.8
 ## 1. SDK集成
 
 ```
 // 必选
-implementation 'com.mjdy.ad:base:1.0.7'
+implementation 'com.mjdy.ad:base:1.0.8'
 
 // 可选
 implementation 'com.mjdy.ad:bd:1.0.0'   // 百度
@@ -266,6 +266,9 @@ PLATFORM_QSZ | 3 | 启示者
 
 # 更改记录
 
+## 1.0.8
+1. 完善了上报机制
+
 ## 1.0.7
 1. 更改onAdLoadFail参数，增加广告平台，错误码，错误信息字段
 
@@ -278,7 +281,7 @@ PLATFORM_QSZ | 3 | 启示者
 3. add log
 
 ## 1.0.4
-修复banner广告文字提示重复的bug
+1. 修复banner广告文字提示重复的bug
 
 ## 1.0.3
 1. 修复了初始化延迟导致banner不显示的bug
@@ -287,7 +290,7 @@ PLATFORM_QSZ | 3 | 启示者
 4. 添加里中文注释
 
 ## 1.0.2
-修复了加载异常的bug
+1. 修复了加载异常的bug
 
 ## 1.0.0
-sdk发布，提供了 开屏，插屏，banner，信息流的广告
+1. sdk发布，提供了 开屏，插屏，banner，信息流的广告
