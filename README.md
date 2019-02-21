@@ -1,9 +1,9 @@
-# MJ广告SDK－－接入说明文档 V1.0.8
+# MJ广告SDK－－接入说明文档 V1.0.9
 ## 1. SDK集成
 
 ```
 // 必选
-implementation 'com.mjdy.ad:base:1.0.8'
+implementation 'com.mjdy.ad:base:1.0.9'
 
 // 可选
 implementation 'com.mjdy.ad:bd:1.0.0'   // 百度
@@ -265,6 +265,9 @@ PLATFORM_QSZ | 3 | 启示者
 
 
 # 更改记录
+
+## 1.0.9
+1. 修改了配置地址
 
 ## 1.0.8
 1. 完善了上报机制
