@@ -1,9 +1,9 @@
-# MJ广告SDK－－接入说明文档 V1.0.9
+# MJ广告SDK－－接入说明文档 V1.1.0
 ## 1. SDK集成
 
 ```
 // 必选
-implementation 'com.mjdy.ad:base:1.0.9'
+implementation 'com.mjdy.ad:base:1.1.0'
 
 // 可选
 implementation 'com.mjdy.ad:bd:1.0.0'   // 百度
@@ -265,6 +265,10 @@ PLATFORM_QSZ | 3 | 启示者
 
 
 # 更改记录
+
+## 1.1.0
+1. banner广告获取失败时，不显示banner
+2. 修复了信息流广告初始化为空时 导致的数据不刷新bug
 
 ## 1.0.9
 1. 修改了配置地址
