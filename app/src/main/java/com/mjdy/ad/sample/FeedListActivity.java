@@ -24,14 +24,13 @@ import java.util.List;
  * Created by cx on 11/16/18.
  * 信息流广告演示demo
  */
-public class NewsListActivity extends Activity {
+public class FeedListActivity extends Activity {
 
     public static void launch(Context context) {
-        context.startActivity(new Intent(context, NewsListActivity.class));
+        context.startActivity(new Intent(context, FeedListActivity.class));
     }
 
     RecyclerView rv_content;  // 目前仅支持 RecyclerView
-
 
     ArrayList<String> data = new ArrayList<>();  // 需要显示的数据
 
@@ -51,9 +50,14 @@ public class NewsListActivity extends Activity {
             @Override
             public void onClick(View v) {
                 // 加载更多
+
+                ArrayList<String> newList = new ArrayList<>();
                 for (int i = 0; i < 20; i++) {
-                    data.add("load more " + i);
+                    newList.add("load more  " + i);
                 }
+
+                data.addAll(newList);
+
                 // when list changed 数据更改时要调用此方法刷新数据
                 feedAdAdapter.refresh();
             }
@@ -62,22 +66,34 @@ public class NewsListActivity extends Activity {
         findViewById(R.id.btn_refresh).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // 模拟下拉刷新
-                data.clear();
-                for (int i = 0; i < 20; i++) {
-                    data.add("refresh " + i);
 
+                // 模拟下拉刷新
+
+                ArrayList<String> newList = new ArrayList<>();
+                for (int i = 0; i < 20; i++) {
+                    newList.add("refresh  " + i);
                 }
+
+                // 这种方式用的是使用原有的data
+                data.clear();
+                data.addAll(newList);
+
+                // 如果是下面这种方式给data赋值，需要更新adapter的list，同时要调用  feedAdAdapter.setDataList(data);
+//                data = newList;
+//                adapter.setDataList(data);
+//                feedAdAdapter.setDataList(data);
+
                 // when list changed 数据更改时要调用此方法刷新数据
                 feedAdAdapter.refresh();
             }
         });
 
-        for (int i = 0; i < 20; i++) {
-            data.add("text " + i);
-        }
 
-        adapter = new NormalAdapter(data);
+        adapter = new NormalAdapter();
+
+        // 给adapter一个需要显示的数据结构
+        adapter.setDataList(data);
+
         rv_content.setLayoutManager(new LinearLayoutManager(this));
 
         // init feedAdAdapter
@@ -95,7 +111,7 @@ public class NewsListActivity extends Activity {
 
             @Override
             public void onAdLoadFail(ErrorModel errorModel) {
-                LogUtil.d("feed ad fail "+errorModel);
+                LogUtil.d("feed ad fail " + errorModel);
 
             }
 
@@ -120,15 +136,17 @@ public class NewsListActivity extends Activity {
         super.onDestroy();
     }
 
+
     /**
-     *  封装adapter共2步
-     *  1. 实现 FeedAdAdapter.IGetDataList
-     *  2. getList 中返回原始数据列表
+     * 封装adapter共2步
+     * 1. 实现 FeedAdAdapter.IGetDataList
+     * 2. getList 中返回原始数据列表
      */
     public class NormalAdapter extends RecyclerView.Adapter<NormalAdapter.VH> implements FeedAdAdapter.IGetDataList {
 
 
         public ArrayList<String> dataList;
+
 
         @Override
         public List getList() {
@@ -136,9 +154,12 @@ public class NewsListActivity extends Activity {
             return dataList;
         }
 
+        public void setDataList(ArrayList<String> dataList) {
+            this.dataList = dataList;
+        }
 
-        public NormalAdapter(ArrayList<String> data) {
-            this.dataList = data;
+
+        public NormalAdapter() {
         }
 
         @Override

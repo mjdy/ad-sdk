@@ -1,9 +1,9 @@
-# MJ广告SDK－－接入说明文档 V1.1.0
+# MJ广告SDK－－接入说明文档 V1.1.1
 ## 1. SDK集成
 
 ```
 // 必选
-implementation 'com.mjdy.ad:base:1.1.0'
+implementation 'com.mjdy.ad:base:1.1.1'
 
 // 可选
 implementation 'com.mjdy.ad:bd:1.0.0'   // 百度
@@ -126,6 +126,11 @@ MJAd.init("this","yourAppId");
 
 ### 2.5 信息流广告
 
+#### 信息流广告集成有两种方式。一种是用sdk提供的封装adapter，另外一种是sdk提供adView，开发者自行插入
+
+### 2.5.1 信息流广告封装adapter集成（推荐）
+
+
 以RecyclerView为例，添加信息流广告即是在adapter中新增一种展示类型，为了方便开发者集成，尽量对原有adapter不作修改，sdk进行了二次封装，参考流程如下：
 
 #### 1. 原有adapter实现FeedAdAdapter.IGetDataList接口
@@ -201,13 +206,65 @@ feedAdAdapter.refresh();
         feedAdAdapter.destroy();
         super.onDestroy();
     }
+
+```
+
+#### 注意事项
+
+> 1. 如果传入给adapter的dataList地址发生改变，比如下拉刷新时，从网络请求到的数据，直接写成 dataList = dataListFromNet ，导致原有dataList地址发生改变，此时需要调用 feedAdAdapter.setDataList() 更新数据 ,sample里有相关说明
+
+
+
+> 2. 以上是原生RecyclerView.Adapter的集成方式，如果开发者用了第三方的封装adapter，比如brvah，对position进行了封装，如果开发者需要获取原有数据的位置，需要调用 feedAdAdapter.getRealPosition(position) 来取得。sample里提供了BRVAH集成的demo，详见 **FeedListThirdAdapterActivity.class**
+
+
+### 2.5.2 信息流广告adview插入集成
+当封装adapter无法满足开发者需求时，可以选用获取adView插入即成的方式
+
+集成方式与封装adapter类似，将 FeedAdAdapter 替换为 FeedAdOnly，传给MJAd . 
+
+调用 feedAdOnly.refresh() 请求广告。参数可传入int，为请求几条广告，默认为3
+
+将请求成功的 List<MJFeedAdView> 插入到开发者自己的数据结构中，调用  **MJFeedAdView.showItem()** 显示
+
+完整实现可参照 **FeedListCustomActivity.class**
+
+
+```
+        FeedAdOnly feedAdOnly = new FeedAdOnly(activity);
+        
+        MJAd.showFeedAd(activity, feedAdOnly, "posAdId", new OnMJAdListener() {
+            @Override
+            public void onAdLoadSuccess() {
+
+					// 获取广告成功后，会回调这里
+			       List<MJFeedAdView> adsList = feedAdOnly.getFeedAdList();
+			       
+			       // 插入到adapter里 ...
+            }
+
+            @Override
+            public void onAdLoadFail(String fail) {
+
+            }
+
+            @Override
+            public void onAdClicked() {
+
+            }
+
+            @Override
+            public void onAdDismiss() {
+
+            }
+        });
+        
+        feedAdOnly.refresh(3); // 必须调用该方法，才会请求广告。
 ```
 
 
-> 上述广告形式，都需要独立的 posAdId
->
-> 上述广告形式，OnMJAdListener 接口为回调监听，如无需要，可传null
 
+> 与封装adapter不同，广告adView必须主动调用refresh后，才会请求广告
 
 
 
@@ -265,6 +322,10 @@ PLATFORM_QSZ | 3 | 启示者
 
 
 # 更改记录
+
+## 1.1.1
+1. 完善了信息流的集成，支持第三方adapter
+2. 信息流广告提供view的形式，开发者可自行获取插入
 
 ## 1.1.0
 1. banner广告获取失败时，不显示banner

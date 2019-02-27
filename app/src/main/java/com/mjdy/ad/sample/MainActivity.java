@@ -7,7 +7,6 @@ import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.LinearLayout;
-import android.widget.Toast;
 
 import com.mobjump.mjadsdk.MJAd;
 import com.mobjump.mjadsdk.adline.interfaces.OnMJAdListener;
@@ -27,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_activity);
 
-        ll_banner = findViewById(R.id.ll_bannder);
+        ll_banner = findViewById(R.id.ll_banner);
 
         activity = this;
 
@@ -137,10 +136,25 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.btn_list).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                NewsListActivity.launch(activity);
+                FeedListActivity.launch(activity);
             }
         });
 
+        // show Feed AD  第三方信息流广告
+        findViewById(R.id.btn_third_list).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                FeedListThirdAdapterActivity.launch(activity);
+            }
+        });
+
+        // show Feed AD  自定义信息流广告
+        findViewById(R.id.btn_custom_list).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                FeedListCustomActivity.launch(activity);
+            }
+        });
 
     }
 }

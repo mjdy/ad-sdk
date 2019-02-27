@@ -8,10 +8,11 @@
     tools:context=".MainActivity">
 
     <LinearLayout
-        android:id="@+id/ll_bannder"
+        android:id="@+id/ll_banner"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"></LinearLayout>
+
 
     <com.mobjump.mjadsdk.view.MJBannerView
         android:id="@+id/banner_view"
@@ -22,25 +23,36 @@
         android:id="@+id/btn_splash"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Show SplashAD" />
+        android:text="显示 开屏广告" />
 
 
     <Button
         android:id="@+id/btn_interteristal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Show InterteristalPosID" />
+        android:text="显示 插屏广告" />
 
     <Button
         android:id="@+id/btn_banner"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Show BANNER" />
+        android:text="显示 Banner广告" />
 
     <Button
         android:id="@+id/btn_list"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Show Info List" />
+        android:text="显示 信息流广告" />
 
+    <Button
+        android:id="@+id/btn_third_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="显示 第三方adapter信息流广告" />
+
+    <Button
+        android:id="@+id/btn_custom_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="显示 自定义的信息流广告" />
 </LinearLayout>
