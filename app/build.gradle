@@ -22,13 +22,16 @@ dependencies {
     implementation 'com.android.support:appcompat-v7:28.0.0'
 
     // 必选
-    implementation 'com.mjdy.ad:base:1.1.1'
+    implementation 'com.mjdy.ad:base:1.1.2'
 
     // 测试用的，第三方adapter
     implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.30'
 
 
     // 可选
-    implementation 'com.mjdy.ad:bd:1.0.0'   // 百度
-    implementation 'com.mjdy.ad:gdt:1.0.0'  // 广点通
+    implementation 'com.mjdy.ad:bd:1.0.1'   // 百度
+    implementation 'com.mjdy.ad:gdt:1.0.1'  // 广点通
+    implementation 'com.mjdy.ad:tt:1.0.0'  // 头条
+
+
 }

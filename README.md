@@ -3,16 +3,38 @@
 
 ```
 // 必选
-implementation 'com.mjdy.ad:base:1.1.1'
+implementation 'com.mjdy.ad:base:1.1.2'
 
 // 可选
-implementation 'com.mjdy.ad:bd:1.0.0'   // 百度
-implementation 'com.mjdy.ad:gdt:1.0.0'  // 广点通
+implementation 'com.mjdy.ad:bd:1.0.1'   // 百度
+implementation 'com.mjdy.ad:gdt:1.0.1'  // 广点通
+implementation 'com.mjdy.ad:tt:1.0.0'  // 头条
+
 
 ```
 
 ## 2. 接入代码
 ### 2.1 初始化
+
+
+在项目根目录的 **build.gradle** 添加如下两条maven库地址：
+
+```
+allprojects {
+    repositories {
+    
+        ...
+         
+        maven { url "https://jitpack.io" }
+        maven { url "https://raw.githubusercontent.com/mjdy/maven/master" }
+
+    }
+}
+```
+
+
+
+
 在application的onCreate里面加入
 
 ```
@@ -267,6 +289,57 @@ feedAdAdapter.refresh();
 > 与封装adapter不同，广告adView必须主动调用refresh后，才会请求广告
 
 
+### 2.6 激励视频
+
+激励视频与其他不同的是，回调接口是 **OnMJRewadVideoListener** ，多了两个方法
+
+1. onVideoPlayFinish() 视频播放完成
+2. onReward(RewardModel rewardModel)  奖励的回调
+
+
+RewardModel结构如下：
+ 
+ 字段名 | 类型 | 说明
+ --- | --- | ---
+ name | string | 奖励名称
+ amount | int | 奖励数量
+
+
+```
+ MJAd.showVideoRewardAd(activity, "rewardVideoPosId", new OnMJRewadVideoListener() {
+
+
+                    @Override
+                    public void onVideoPlayFinish() {
+
+                    }
+
+                    @Override
+                    public void onReward(RewardModel rewardModel) {
+
+                    }
+
+                    @Override
+                    public void onAdLoadSuccess() {
+
+                    }
+
+                    @Override
+                    public void onAdLoadFail(ErrorModel errorModel) {
+
+                    }
+
+                    @Override
+                    public void onAdClicked() {
+
+                    }
+
+                    @Override
+                    public void onAdDismiss() {
+
+                    }
+                });
+```
 
 ## 3.其他
 ### 3.1 混淆
@@ -316,12 +389,16 @@ PLATFORM_UNKOWN | -1 |  用于显示通用错误
 PLATFORM_GDT | 1 | 广点通
 PLATFORM_BD | 2 | 百度
 PLATFORM_QSZ | 3 | 启示者
+PLATFORM_TT | 4 | 头条
 
 #### 相应平台错误码
 请参见具体平台的文档。如 广点通sdk文档 or 百度sdk文档
 
 
 # 更改记录
+
+## 1.1.2
+1. 新增激励视频
 
 ## 1.1.1
 1. 完善了信息流的集成，支持第三方adapter
