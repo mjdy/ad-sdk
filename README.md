@@ -1,14 +1,14 @@
-# MJ广告SDK－－接入说明文档 V1.1.1
+# MJ广告SDK－－接入说明文档 V1.1.4
 ## 1. SDK集成
 
 ```
 // 必选
-implementation 'com.mjdy.ad:base:1.1.2'
+implementation 'com.mjdy.ad:base:1.1.4'
 
 // 可选
-implementation 'com.mjdy.ad:bd:1.0.1'   // 百度
+implementation 'com.mjdy.ad:bd:1.0.2'   // 百度
 implementation 'com.mjdy.ad:gdt:1.0.1'  // 广点通
-implementation 'com.mjdy.ad:tt:1.0.0'  // 头条
+implementation 'com.mjdy.ad:tt:1.0.4'  // 头条
 
 
 ```
@@ -396,6 +396,12 @@ PLATFORM_TT | 4 | 头条
 
 
 # 更改记录
+
+## 1.1.4
+1. 修复头条的混淆问题
+
+## 1.1.3
+1. 修复头条可能遇到的问题
 
 ## 1.1.2
 1. 新增激励视频

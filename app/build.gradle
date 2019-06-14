@@ -14,6 +14,11 @@ android {
             minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+
+        debug {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
     }
 }
 
@@ -22,16 +27,16 @@ dependencies {
     implementation 'com.android.support:appcompat-v7:28.0.0'
 
     // 必选
-    implementation 'com.mjdy.ad:base:1.1.2'
+    implementation 'com.mjdy.ad:base:1.1.4'
 
     // 测试用的，第三方adapter
     implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.30'
 
 
     // 可选
-    implementation 'com.mjdy.ad:bd:1.0.1'   // 百度
+    implementation 'com.mjdy.ad:bd:1.0.2'   // 百度
     implementation 'com.mjdy.ad:gdt:1.0.1'  // 广点通
-    implementation 'com.mjdy.ad:tt:1.0.0'  // 头条
+    implementation 'com.mjdy.ad:tt:1.0.4'  // 头条
 
 
 }
