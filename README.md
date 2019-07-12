@@ -1,9 +1,9 @@
-# MJ广告SDK－－接入说明文档 V1.1.5
+# MJ广告SDK－－接入说明文档 V1.1.6
 ## 1. SDK集成
 
 ```
 // 必选
-implementation 'com.mjdy.ad:base:1.1.5'
+implementation 'com.mjdy.ad:base:1.1.6'
 
 // 可选
 implementation 'com.mjdy.ad:bd:1.0.2'   // 百度
@@ -396,6 +396,9 @@ PLATFORM_TT | 4 | 头条
 
 
 # 更改记录
+
+## 1.1.6
+1. 广点通banner和插屏升级为2.0
 
 ## 1.1.5
 1. 修复配置文件解析异常
