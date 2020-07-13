@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.btn_splash).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                MJAd.showSplashAd(activity, "2", new OnMJAdListener() {
+                MJAd.showSplashAd(activity, "99309152", new OnMJAdListener() {
                     @Override
                     public void onAdLoadSuccess() {
                         LogUtil.d("splash ad success");
@@ -71,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                MJAd.showInterstitialAd(activity, "3", new OnMJAdListener() {
+                MJAd.showInterstitialAd(activity, "20886925", new OnMJAdListener() {
                     @Override
                     public void onAdLoadSuccess() {
                         LogUtil.d("interteristal ad success");
@@ -101,11 +101,11 @@ public class MainActivity extends AppCompatActivity {
 
         // show Banner AD
         banner_view = findViewById(R.id.banner_view);
-        banner_view.setRefreshTime(10);
+        banner_view.setRefreshTime(20);
         findViewById(R.id.btn_banner).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                MJAd.showBannerAd(activity, banner_view, "4", new OnMJAdListener() {
+                MJAd.showBannerAd(activity, banner_view, "96743842", new OnMJAdListener() {
                     @Override
                     public void onAdLoadSuccess() {
                         LogUtil.d("banner ad success");
@@ -137,39 +137,40 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.btn_reward_video).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                MJAd.showVideoRewardAd(activity, "6", new OnMJRewadVideoListener() {
-
-
-                    @Override
-                    public void onVideoPlayFinish() {
-                        LogUtil.d("onVideoPlayFinish");
-                    }
-
-                    @Override
-                    public void onReward(RewardModel rewardModel) {
-                        LogUtil.d("onReward  name : " + rewardModel.name + " , amount: " + rewardModel.amount);
-                    }
-
-                    @Override
-                    public void onAdLoadSuccess() {
-                        LogUtil.d("onAdLoadSuccess");
-                    }
-
-                    @Override
-                    public void onAdLoadFail(ErrorModel errorModel) {
-                        LogUtil.d("onAdLoadFail "+errorModel.toString());
-                    }
-
-                    @Override
-                    public void onAdClicked() {
-                        LogUtil.d("onAdClicked");
-                    }
-
-                    @Override
-                    public void onAdDismiss() {
-                        LogUtil.d("onAdDismiss");
-                    }
-                });
+                // TODO
+//                MJAd.showVideoRewardAd(activity, "6", new OnMJRewadVideoListener() {
+//
+//
+//                    @Override
+//                    public void onVideoPlayFinish() {
+//                        LogUtil.d("onVideoPlayFinish");
+//                    }
+//
+//                    @Override
+//                    public void onReward(RewardModel rewardModel) {
+//                        LogUtil.d("onReward  name : " + rewardModel.name + " , amount: " + rewardModel.amount);
+//                    }
+//
+//                    @Override
+//                    public void onAdLoadSuccess() {
+//                        LogUtil.d("onAdLoadSuccess");
+//                    }
+//
+//                    @Override
+//                    public void onAdLoadFail(ErrorModel errorModel) {
+//                        LogUtil.d("onAdLoadFail "+errorModel.toString());
+//                    }
+//
+//                    @Override
+//                    public void onAdClicked() {
+//                        LogUtil.d("onAdClicked");
+//                    }
+//
+//                    @Override
+//                    public void onAdDismiss() {
+//                        LogUtil.d("onAdDismiss");
+//                    }
+//                });
             }
         });
 

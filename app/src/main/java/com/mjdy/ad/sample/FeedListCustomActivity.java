@@ -113,7 +113,7 @@ public class FeedListCustomActivity extends Activity {
         // 以下声明一次即可
         // 注意：必须主动调用  feedAdOnly.refresh() 之后，才会有广告回调回来。 建议开发者在获取自己的数据之后再调用 feedAdOnly.refresh()
         feedAdOnly = new FeedAdOnly(FeedListCustomActivity.this);
-        MJAd.showFeedAd(this, feedAdOnly, "5", new OnMJAdListener() {
+        MJAd.showFeedAd(this, feedAdOnly, "20086307", new OnMJAdListener() {
             @Override
             public void onAdLoadSuccess() {
                 LogUtil.d("feed ad success");

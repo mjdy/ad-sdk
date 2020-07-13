@@ -21,6 +21,8 @@ allprojects {
         jcenter()
         maven { url "https://jitpack.io" }
         maven { url "https://raw.githubusercontent.com/mjdy/maven/master" }
+        maven { url 'https://dl.bintray.com/umsdk/release' }
+
 
     }
 }

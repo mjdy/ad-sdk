@@ -114,7 +114,7 @@ public class FeedListThirdAdapterActivity extends Activity {
 
 
         // show feed ad
-        MJAd.showFeedAd(this, feedAdAdapter, "5", new OnMJAdListener() {
+        MJAd.showFeedAd(this, feedAdAdapter, "20086307", new OnMJAdListener() {
             @Override
             public void onAdLoadSuccess() {
                 LogUtil.d("feed ad success");

@@ -15,6 +15,7 @@ import android.widget.TextView;
 import com.mobjump.mjadsdk.MJAd;
 import com.mobjump.mjadsdk.adline.interfaces.OnMJAdListener;
 import com.mobjump.mjadsdk.bean.ErrorModel;
+import com.mobjump.mjadsdk.d.d;
 import com.mobjump.mjadsdk.view.FeedAdAdapter;
 
 import java.util.ArrayList;
@@ -102,7 +103,7 @@ public class FeedListActivity extends Activity {
         rv_content.setAdapter(feedAdAdapter.wrapper());
 
         // show feed ad
-        MJAd.showFeedAd(this, feedAdAdapter, "5", new OnMJAdListener() {
+        MJAd.showFeedAd(this, feedAdAdapter, "20086307", new OnMJAdListener() {
             @Override
             public void onAdLoadSuccess() {
                 LogUtil.d("feed ad success");
