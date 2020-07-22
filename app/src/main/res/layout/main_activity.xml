@@ -7,56 +7,22 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <Button
+        android:id="@+id/btn_show_ad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="容器显示广告" />
+
+    <Button
+        android:id="@+id/btn_get_ad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="获取广告自处理" />
+
     <LinearLayout
-        android:id="@+id/ll_banner"
+        android:id="@+id/ll_container"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"></LinearLayout>
+        android:orientation="vertical"></LinearLayout>
 
-
-    <com.mobjump.mjadsdk.view.MJBannerView
-        android:id="@+id/banner_view"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"></com.mobjump.mjadsdk.view.MJBannerView>
-
-    <Button
-        android:id="@+id/btn_splash"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="显示 开屏广告" />
-
-
-    <Button
-        android:id="@+id/btn_interteristal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="显示 插屏广告" />
-
-    <Button
-        android:id="@+id/btn_banner"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="显示 Banner广告" />
-    <Button
-        android:id="@+id/btn_reward_video"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="显示 激励视频广告" />
-    <Button
-        android:id="@+id/btn_list"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="显示 信息流广告" />
-
-    <Button
-        android:id="@+id/btn_third_list"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="显示 第三方adapter信息流广告" />
-
-    <Button
-        android:id="@+id/btn_custom_list"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="显示 自定义的信息流广告" />
 </LinearLayout>

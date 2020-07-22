@@ -1,13 +1,11 @@
--injars /Users/cx/.gradle/caches/transforms-1/files-1.1/base-1.1.8.aar/0f962c003cd0e2738efd2339e27df916/jars/classes.jar(**.class)
 -injars /Users/cx/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/5ae1fc2f943851adb79212c61fb3f270/jars/classes.jar(**.class)
--injars /Users/cx/.gradle/caches/transforms-1/files-1.1/BaseRecyclerViewAdapterHelper-2.9.30.aar/3de8237aefff61119dedd441b2f9f418/jars/classes.jar(**.class)
+-injars /Users/cx/.gradle/caches/transforms-1/files-1.1/base-1.1.9.aar/c83acd367440b1685df103346e15ddff/jars/classes.jar(**.class)
 -injars /Users/cx/.gradle/caches/transforms-1/files-1.1/bd-1.0.2.aar/ccac98c29aced1fbb8ff0e8930a98fa8/jars/classes.jar(**.class)
 -injars /Users/cx/.gradle/caches/transforms-1/files-1.1/gdt-1.0.2.aar/630417fb26dc255541ce21a554912316/jars/classes.jar(**.class)
 -injars /Users/cx/.gradle/caches/transforms-1/files-1.1/tt-1.0.5.aar/e4f3870fe1cbc9aa9ed4c686fecd7cc5/jars/classes.jar(**.class)
 -injars /Users/cx/.gradle/caches/transforms-1/files-1.1/tt-1.0.5.aar/e4f3870fe1cbc9aa9ed4c686fecd7cc5/jars/libs/android-query-full.0.26.7.jar(**.class)
 -injars /Users/cx/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/daa0ed5408cfb76f40dd7c160a26a8b2/jars/classes.jar(**.class)
 -injars /Users/cx/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/c4c24f4e08d74aa11fc91e9d58cec70a/jars/classes.jar(**.class)
--injars /Users/cx/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/ee79125fb6dc52f1ff134b3136e47893/jars/classes.jar(**.class)
 -injars /Users/cx/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/c815251d5be95ca17f3d7b20aa595a7e/jars/classes.jar(**.class)
 -injars /Users/cx/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/2dc08597bb7b235fcade5c60979994db/jars/classes.jar(**.class)
 -injars /Users/cx/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/00f9f672b3beb618163ac80f55979c27/jars/classes.jar(**.class)
@@ -156,103 +154,88 @@
     <init>(...);
 }
 
-# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:105
+# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:102
 -keep class android.support.v4.content.FileProvider {
     <init>(...);
 }
 
-# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:72
+# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:69
 -keep class com.baidu.mobads.AppActivity {
     <init>(...);
 }
 
-# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:77
+# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:74
 -keep class com.baidu.mobads.openad.FileProvider {
     <init>(...);
 }
 
-# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:128
+# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:125
 -keep class com.baidu.mobads.production.rewardvideo.MobRewardVideoActivity {
     <init>(...);
 }
 
-# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:238
+# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:235
 -keep class com.bytedance.embedapplog.collector.Collector {
     <init>(...);
 }
 
-# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:114
+# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:111
 -keep class com.bytedance.sdk.openadsdk.TTFileProvider {
     <init>(...);
 }
 
-# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:231
+# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:228
 -keep class com.bytedance.sdk.openadsdk.activity.TTDelegateActivity {
     <init>(...);
 }
 
-# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:227
+# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:224
 -keep class com.bytedance.sdk.openadsdk.activity.TTFullScreenExpressVideoActivity {
     <init>(...);
 }
 
-# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:223
+# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:220
 -keep class com.bytedance.sdk.openadsdk.activity.TTFullScreenVideoActivity {
     <init>(...);
 }
 
-# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:203
+# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:200
 -keep class com.bytedance.sdk.openadsdk.activity.TTLandingPageActivity {
     <init>(...);
 }
 
-# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:207
+# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:204
 -keep class com.bytedance.sdk.openadsdk.activity.TTPlayableLandingPageActivity {
     <init>(...);
 }
 
-# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:219
+# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:216
 -keep class com.bytedance.sdk.openadsdk.activity.TTRewardExpressVideoActivity {
     <init>(...);
 }
 
-# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:215
+# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:212
 -keep class com.bytedance.sdk.openadsdk.activity.TTRewardVideoActivity {
     <init>(...);
 }
 
-# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:211
+# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:208
 -keep class com.bytedance.sdk.openadsdk.activity.TTVideoLandingPageActivity {
     <init>(...);
 }
 
-# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:123
+# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:120
 -keep class com.bytedance.sdk.openadsdk.multipro.TTMultiProvider {
     <init>(...);
 }
 
-# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:236
+# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:233
 -keep class com.bytedance.sdk.openadsdk.multipro.aidl.BinderPoolService {
     <init>(...);
 }
 
-# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:243
+# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:240
 -keep class com.bytedance.tea.crash.upload.CrashUploadService {
-    <init>(...);
-}
-
-# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:43
--keep class com.mjdy.ad.sample.FeedListActivity {
-    <init>(...);
-}
-
-# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:45
--keep class com.mjdy.ad.sample.FeedListCustomActivity {
-    <init>(...);
-}
-
-# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:44
--keep class com.mjdy.ad.sample.FeedListThirdAdapterActivity {
     <init>(...);
 }
 
@@ -266,102 +249,102 @@
     <init>(...);
 }
 
-# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:54
+# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:51
 -keep class com.mjdy.utilcode.util.PermissionUtils$PermissionActivity {
     <init>(...);
 }
 
-# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:61
+# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:58
 -keep class com.mjdy.utilcode.util.Utils$FileProvider4UtilCode {
     <init>(...);
 }
 
-# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:46
+# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:43
 -keep class com.mobjump.mjadsdk.AdActivity {
     <init>(...);
 }
 
-# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:91
+# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:88
 -keep class com.qq.e.ads.ADActivity {
     <init>(...);
 }
 
-# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:100
+# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:97
 -keep class com.qq.e.ads.LandscapeADActivity {
     <init>(...);
 }
 
-# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:95
+# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:92
 -keep class com.qq.e.ads.PortraitADActivity {
     <init>(...);
 }
 
-# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:143
+# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:140
 -keep class com.qq.e.ads.RewardvideoLandscapeADActivity {
     <init>(...);
 }
 
-# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:134
+# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:131
 -keep class com.qq.e.ads.RewardvideoPortraitADActivity {
     <init>(...);
 }
 
-# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:87
+# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:84
 -keep class com.qq.e.comm.DownloadService {
     <init>(...);
 }
 
-# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:197
+# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:194
 -keep class com.ss.android.downloadlib.activity.TTDelegateActivity {
     <init>(...);
 }
 
-# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:202
+# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:199
 -keep class com.ss.android.downloadlib.core.download.DownloadReceiver {
     <init>(...);
 }
 
-# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:173
+# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:170
 -keep class com.ss.android.socialbase.appdownloader.DownloadHandlerService {
     <init>(...);
 }
 
-# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:189
+# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:186
 -keep class com.ss.android.socialbase.appdownloader.view.DownloadTaskDeleteActivity {
     <init>(...);
 }
 
-# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:193
+# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:190
 -keep class com.ss.android.socialbase.appdownloader.view.JumpUnknownSourceActivity {
     <init>(...);
 }
 
-# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:154
+# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:151
 -keep class com.ss.android.socialbase.downloader.downloader.DownloadService {
     <init>(...);
 }
 
-# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:155
+# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:152
 -keep class com.ss.android.socialbase.downloader.downloader.IndependentProcessDownloadService {
     <init>(...);
 }
 
-# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:172
+# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:169
 -keep class com.ss.android.socialbase.downloader.downloader.SqlDownloadCacheService {
     <init>(...);
 }
 
-# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:162
+# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:159
 -keep class com.ss.android.socialbase.downloader.impls.DownloadHandleService {
     <init>(...);
 }
 
-# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:167
+# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:164
 -keep class com.ss.android.socialbase.downloader.impls.RetryJobSchedulerService {
     <init>(...);
 }
 
-# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:153
+# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:150
 -keep class com.ss.android.socialbase.downloader.notification.DownloadNotificationService {
     <init>(...);
 }
@@ -564,8 +547,26 @@
     <init>(...);
 }
 
-# Referenced at /Users/cx/workspace/li/ad-sdk/app/src/main/res/layout/main_activity.xml:17
--keep class com.mobjump.mjadsdk.view.MJBannerView {
+# Copyright (C) 2018 The Android Open Source Project
+# 
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+# 
+#      http://www.apache.org/licenses/LICENSE-2.0
+# 
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+# Ensure that reflectively-loaded inflater is not obfuscated. This can be
+# removed when we stop supporting AAPT1 builds.
+-keep,allowshrinking class android.support.v7.app.AppCompatViewInflater
+
+# aapt is not able to read app::actionViewClass and app:actionProviderClass to produce proguard
+# keep rules. Add a commonly used SearchView to the keep list until b/109831488 is resolved.
+-keep class android.support.v7.widget.SearchView {
     <init>(...);
 }
 
@@ -683,29 +684,6 @@
 
 # A resource is loaded with a relative path so the package of this class must be preserved.
 -keep,allowshrinking class okhttp3.internal.publicsuffix.PublicSuffixDatabase
-
-# Copyright (C) 2018 The Android Open Source Project
-# 
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-# 
-#      http://www.apache.org/licenses/LICENSE-2.0
-# 
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
-# Ensure that reflectively-loaded inflater is not obfuscated. This can be
-# removed when we stop supporting AAPT1 builds.
--keep,allowshrinking class android.support.v7.app.AppCompatViewInflater
-
-# aapt is not able to read app::actionViewClass and app:actionProviderClass to produce proguard
-# keep rules. Add a commonly used SearchView to the keep list until b/109831488 is resolved.
--keep class android.support.v7.widget.SearchView {
-    <init>(...);
-}
 
 # Add project specific ProGuard rules here.
 # You can control the set of applied configuration files using the
@@ -858,26 +836,6 @@
 -keepclassmembers class android.support.graphics.drawable.VectorDrawableCompat$* {
     void set*(***);
     *** get*();
-}
-
-# Copyright (C) 2015 The Android Open Source Project
-# 
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-# 
-#      http://www.apache.org/licenses/LICENSE-2.0
-# 
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
-# When layoutManager xml attribute is used, RecyclerView inflates
-# LayoutManagers' constructors using reflection.
--keep public class * extends android.support.v7.widget.RecyclerView$LayoutManager {
-    public <init>(android.content.Context,android.util.AttributeSet,int,int);
-    public <init>();
 }
 
 # Copyright (C) 2016 The Android Open Source Project

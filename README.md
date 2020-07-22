@@ -1,14 +1,14 @@
-# MJ广告SDK－－接入说明文档 V1.1.8
+# MJ广告SDK－－接入说明文档 V1.1.9
 ## 1. SDK集成
 
 ```
 // 必选
-implementation 'com.mjdy.ad:base:1.1.6'
+implementation 'com.mjdy.ad:base:1.1.9'
 
 // 可选
 implementation 'com.mjdy.ad:bd:1.0.2'   // 百度
-implementation 'com.mjdy.ad:gdt:1.0.1'  // 广点通
-implementation 'com.mjdy.ad:tt:1.0.4'  // 头条
+implementation 'com.mjdy.ad:gdt:1.0.2'  // 广点通
+implementation 'com.mjdy.ad:tt:1.0.5'  // 头条
 
 
 ```
@@ -50,296 +50,39 @@ MJAd.init("this","yourAppId");
 ```
 
 
-### 2.2 开屏广告
-```
-            MJAd.showSplashAd(activity, "posAdId", new OnHTAdListener() {
-                    @Override
-                    public void onAdLoadSuccess()
-                    }
+### 2.2 请求显示广告
 
-                    @Override
-                    public void onAdLoadFail(int failCode) {
-
-                    }
-
-                    @Override
-                    public void onAdClicked() {
-
-                    }
-
-                    @Override
-                    public void onAdDismiss() {
-
-                    }
-                });
-```
-### 2.3 插屏广告
-```
-          MJAd.showInterstitialAd(activity, "posAdId", new OnHTAdListener() {
-                    @Override
-                    public void onAdLoadSuccess() {
-                        
-                    }
-
-                    @Override
-                    public void onAdLoadFail(int i) {
-
-                    }
-
-                    @Override
-                    public void onAdClicked() {
-
-                    }
-
-                    @Override
-                    public void onAdDismiss() {
-
-                    }
-                });
-```
-### 2.4 Banner广告
-在需要引入的layout里添加
 
 ```
-    <com.mobjump.mjadsdk.view.MJBannerView
-        android:id="@+id/banner_view"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"></com.mobjump.mjadsdk.view.MJBannerView>
-```
+                MJAdConfig adConfig = new MJAdConfig.Builder()
+                        .activity(activity)
+                        .posId("adPosId")
+                        .build();
 
-在代码里
-
-```
-         MJBannerView banner_view = findViewById(R.id.banner_view);
-		  
-         MJAd.showBannerAd(activity, banner_view, "podAdId", new OnHTAdListener() {
+                MJAd.showAd(adConfig, new MJAdListener() {
                     @Override
-                    public void onAdLoadSuccess() {
+                    public void onAdLoadSuccess(List<MJAdView> adViewList) {
 
-                    }
-
-                    @Override
-                    public void onAdLoadFail(int failCode) {
-
-                    }
-
-                    @Override
-                    public void onAdClicked() {
-
-                    }
-
-                    @Override
-                    public void onAdDismiss() {
-
+         
                     }
                 });
 ```
 
-在activity销毁时，建议调用view销毁
+构造一个 **MJAdConfig** ，然后调用 **MJAd.showAd(config,listener)**
 
-```
-    @Override
-    protected void onDestroy() {
-        banner_view.destroy();
-        super.onDestroy();
-    }
-```
+### MJAdConfig
 
+   字段  | 说明 | 是否必须 | 备注
+---| --- | --- | ---
+activity | activity | 是| 必须是activity
+posId |  广告位代码 | 是 | 
+container | 容器 | 否 | ViewGroup 
+width | 宽度 | 否 |  单位dp，默认屏幕宽度dp
+adCount | 请求广告数量 | 否| 默认 1
+timeout | 请求广告超时 | 否 | 单位毫秒，默认 3000
+refreshTime | 广告刷新时间 | 否 | 
 
-### 2.5 信息流广告
 
-#### 信息流广告集成有两种方式。一种是用sdk提供的封装adapter，另外一种是sdk提供adView，开发者自行插入
-
-### 2.5.1 信息流广告封装adapter集成（推荐）
-
-
-以RecyclerView为例，添加信息流广告即是在adapter中新增一种展示类型，为了方便开发者集成，尽量对原有adapter不作修改，sdk进行了二次封装，参考流程如下：
-
-#### 1. 原有adapter实现FeedAdAdapter.IGetDataList接口
-```
-    public class NormalAdapter extends RecyclerView.Adapter implements FeedAdAdapter.IGetDataList {
-        public List dataList; // 实现List接口的数据结构均可，如ArrayList
-
-        @Override
-        public List getList() {
-            return dataList;
-        }
-        
-        @Override
-        public int getItemCount() {
-            return dataList.size();
-        }
-        
-        ...
-```
-getList() 需返回adapter显示的内容数据，否则无法显示广告
-
-#### 2.对原有adapter进行包装
-
-```
-        RecyclerView rv_content = findViewById(R.id.rv_content);
-        ...
-       
-        FeedAdAdapter feedAdAdapter = new FeedAdAdapter(originAdapter); // originAdapter需实现 FeedAdAdapter.IGetDataList
-        rv_content.setAdapter(feedAdAdapter.wrapper());
-```
-
-originAdpater即为原有的adapter，如第一步中的NormalAdapter，需注意，原有adapter必须实现FeedAdAdapter.IGetDataList。然后将 feedAdAdapter.wrapper() 包装后的adapter作为参数，传递给RecyclerView的setAdapter
-
-#### 3. 设置信息流广告ID
-设置ID应该在RecyclerView setAdater 之后
-
-```
-        MJAd.showFeedAd(activity, feedAdAdapter, "posAdId", new OnMJAdListener() {
-            @Override
-            public void onAdLoadSuccess() {
-
-            }
-
-            @Override
-            public void onAdLoadFail(String fail) {
-
-            }
-
-            @Override
-            public void onAdClicked() {
-
-            }
-
-            @Override
-            public void onAdDismiss() {
-
-            }
-        });
-```
-
-#### 4. 数据变更时的adapter刷新
-如果信息流内容有变化，比如加载更多，需要调用FeedAdAdapter的刷新
-
-```
-feedAdAdapter.refresh();
-```
-#### 5. 数据销毁
-如果界面销毁，需要调用FeedAdAdapter的destroy,比如在onDestroy里调用
-
-```
-    @Override
-    protected void onDestroy() {
-        feedAdAdapter.destroy();
-        super.onDestroy();
-    }
-
-```
-
-#### 注意事项
-
-> 1. 如果传入给adapter的dataList地址发生改变，比如下拉刷新时，从网络请求到的数据，直接写成 dataList = dataListFromNet ，导致原有dataList地址发生改变，此时需要调用 feedAdAdapter.setDataList() 更新数据 ,sample里有相关说明
-
-
-
-> 2. 以上是原生RecyclerView.Adapter的集成方式，如果开发者用了第三方的封装adapter，比如brvah，对position进行了封装，如果开发者需要获取原有数据的位置，需要调用 feedAdAdapter.getRealPosition(position) 来取得。sample里提供了BRVAH集成的demo，详见 **FeedListThirdAdapterActivity.class**
-
-
-### 2.5.2 信息流广告adview插入集成
-当封装adapter无法满足开发者需求时，可以选用获取adView插入即成的方式
-
-集成方式与封装adapter类似，将 FeedAdAdapter 替换为 FeedAdOnly，传给MJAd . 
-
-调用 feedAdOnly.refresh() 请求广告。参数可传入int，为请求几条广告，默认为3
-
-将请求成功的 List<MJFeedAdView> 插入到开发者自己的数据结构中，调用  **MJFeedAdView.showItem()** 显示
-
-完整实现可参照 **FeedListCustomActivity.class**
-
-
-```
-        FeedAdOnly feedAdOnly = new FeedAdOnly(activity);
-        
-        MJAd.showFeedAd(activity, feedAdOnly, "posAdId", new OnMJAdListener() {
-            @Override
-            public void onAdLoadSuccess() {
-
-					// 获取广告成功后，会回调这里
-			       List<MJFeedAdView> adsList = feedAdOnly.getFeedAdList();
-			       
-			       // 插入到adapter里 ...
-            }
-
-            @Override
-            public void onAdLoadFail(String fail) {
-
-            }
-
-            @Override
-            public void onAdClicked() {
-
-            }
-
-            @Override
-            public void onAdDismiss() {
-
-            }
-        });
-        
-        feedAdOnly.refresh(3); // 必须调用该方法，才会请求广告。
-```
-
-
-
-> 与封装adapter不同，广告adView必须主动调用refresh后，才会请求广告
-
-
-### 2.6 激励视频
-
-激励视频与其他不同的是，回调接口是 **OnMJRewadVideoListener** ，多了两个方法
-
-1. onVideoPlayFinish() 视频播放完成
-2. onReward(RewardModel rewardModel)  奖励的回调
-
-
-RewardModel结构如下：
- 
- 字段名 | 类型 | 说明
- --- | --- | ---
- name | string | 奖励名称
- amount | int | 奖励数量
-
-
-```
- MJAd.showVideoRewardAd(activity, "rewardVideoPosId", new OnMJRewadVideoListener() {
-
-
-                    @Override
-                    public void onVideoPlayFinish() {
-
-                    }
-
-                    @Override
-                    public void onReward(RewardModel rewardModel) {
-
-                    }
-
-                    @Override
-                    public void onAdLoadSuccess() {
-
-                    }
-
-                    @Override
-                    public void onAdLoadFail(ErrorModel errorModel) {
-
-                    }
-
-                    @Override
-                    public void onAdClicked() {
-
-                    }
-
-                    @Override
-                    public void onAdDismiss() {
-
-                    }
-                });
-```
 
 ## 3.其他
 ### 3.1 混淆
@@ -348,8 +91,7 @@ SDK已经处理，无需额外操作
 本工程为sample工程，可作为集成参考
 
 ### 3.3 已知问题
-1. sample里的百度的开屏广告请求失败，更换为正式id后应该正常
-2. 第一次运行sample ，需要获取百度or广点通的相关数据，在数据获取成功前，请求广告会失败。网络正常的情况下，一般5秒后即可
+1. 第一次运行sample ，需要获取百度or广点通的相关数据，在数据获取成功前，请求广告会失败。网络正常的情况下，一般5秒后即可
 
 ### 3.4 错误码
 
@@ -396,6 +138,8 @@ PLATFORM_TT | 4 | 头条
 
 
 # 更改记录
+## 1.1.9
+1. 去除广告位类型，统一为showAd
 
 ## 1.1.8
 1. 整合了新的实现方式

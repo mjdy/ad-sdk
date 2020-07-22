@@ -18,10 +18,6 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".FeedListActivity"></activity>
-        <activity android:name=".FeedListThirdAdapterActivity"></activity>
-        <activity android:name=".FeedListCustomActivity"></activity>
-
     </application>
 
 </manifest>
