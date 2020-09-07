@@ -1,45 +1,53 @@
--injars /Users/cx/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/5ae1fc2f943851adb79212c61fb3f270/jars/classes.jar(**.class)
--injars /Users/cx/.gradle/caches/transforms-1/files-1.1/base-1.1.9.aar/c83acd367440b1685df103346e15ddff/jars/classes.jar(**.class)
--injars /Users/cx/.gradle/caches/transforms-1/files-1.1/bd-1.0.2.aar/ccac98c29aced1fbb8ff0e8930a98fa8/jars/classes.jar(**.class)
--injars /Users/cx/.gradle/caches/transforms-1/files-1.1/gdt-1.0.2.aar/630417fb26dc255541ce21a554912316/jars/classes.jar(**.class)
--injars /Users/cx/.gradle/caches/transforms-1/files-1.1/tt-1.0.5.aar/e4f3870fe1cbc9aa9ed4c686fecd7cc5/jars/classes.jar(**.class)
--injars /Users/cx/.gradle/caches/transforms-1/files-1.1/tt-1.0.5.aar/e4f3870fe1cbc9aa9ed4c686fecd7cc5/jars/libs/android-query-full.0.26.7.jar(**.class)
--injars /Users/cx/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/daa0ed5408cfb76f40dd7c160a26a8b2/jars/classes.jar(**.class)
--injars /Users/cx/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/c4c24f4e08d74aa11fc91e9d58cec70a/jars/classes.jar(**.class)
--injars /Users/cx/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/c815251d5be95ca17f3d7b20aa595a7e/jars/classes.jar(**.class)
--injars /Users/cx/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/2dc08597bb7b235fcade5c60979994db/jars/classes.jar(**.class)
--injars /Users/cx/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/00f9f672b3beb618163ac80f55979c27/jars/classes.jar(**.class)
--injars /Users/cx/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/d5dd2e6d418b95333fe8ea50cc28d581/jars/classes.jar(**.class)
--injars /Users/cx/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/af1292f0abcb4f3ed9955379620e9763/jars/classes.jar(**.class)
--injars /Users/cx/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/83d2259f850f2bf69baaa88a5a887489/jars/classes.jar(**.class)
--injars /Users/cx/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/43b4e0f541c2af7af5129966d9bd2666/jars/classes.jar(**.class)
--injars /Users/cx/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/859e9faccc5d0dc24d30534a759c55a2/jars/classes.jar(**.class)
--injars /Users/cx/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/6ae7c542e0cca0c8f6146899f3fcd579/jars/classes.jar(**.class)
--injars /Users/cx/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/7a197cdc4e82bebab5282aca92e6bd1c/jars/classes.jar(**.class)
--injars /Users/cx/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/9ed0f2d37b89796902c12a49298f78d1/jars/classes.jar(**.class)
--injars /Users/cx/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/23a4a63ba6bab1920ae188af9be609b1/jars/classes.jar(**.class)
--injars /Users/cx/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/3b9f76f96b105a2bd591b01afe7705af/jars/classes.jar(**.class)
+-injars /Users/cx/.gradle/caches/transforms-2/files-2.1/8f2e27fee2802b11928e55186a715e74/jars/classes.jar(**.class)
+-injars /Users/cx/.gradle/caches/transforms-2/files-2.1/a81804390308ba2f46df4388b085a433/jars/classes.jar(**.class)
+-injars /Users/cx/.gradle/caches/transforms-2/files-2.1/83e21e9365858f1905a5b804b343f98b/jars/classes.jar(**.class)
+-injars /Users/cx/.gradle/caches/transforms-2/files-2.1/8f7ae71a17974996f508ad6c69f11787/jars/classes.jar(**.class)
+-injars /Users/cx/.gradle/caches/transforms-2/files-2.1/abfb143874d93e099cd4628eafa060d8/jars/classes.jar(**.class)
+-injars /Users/cx/.gradle/caches/transforms-2/files-2.1/abfb143874d93e099cd4628eafa060d8/jars/libs/android-query-full.0.26.7.jar(**.class)
+-injars /Users/cx/.gradle/caches/transforms-2/files-2.1/fb8a671a57be8b4fa0e87a4f124b5031/jars/classes.jar(**.class)
+-injars /Users/cx/.gradle/caches/transforms-2/files-2.1/8e158d4fd64386da0b0918b69c434176/jars/classes.jar(**.class)
+-injars /Users/cx/.gradle/caches/transforms-2/files-2.1/6664648046cee1fbfca20b4e4697b901/jars/classes.jar(**.class)
+-injars /Users/cx/.gradle/caches/transforms-2/files-2.1/249fb5065e402e455201d89446ff723d/jars/classes.jar(**.class)
+-injars /Users/cx/.gradle/caches/transforms-2/files-2.1/b875921ce9017bcfbc3a3b7dafa7926c/jars/classes.jar(**.class)
+-injars /Users/cx/.gradle/caches/transforms-2/files-2.1/2631b0c27d13d20ec9bfee940f4d2da9/jars/classes.jar(**.class)
+-injars /Users/cx/.gradle/caches/transforms-2/files-2.1/b02b1d011787e2dda4c42ec71ea1b2c3/jars/classes.jar(**.class)
+-injars /Users/cx/.gradle/caches/transforms-2/files-2.1/ad6070b5db0bc7ffc67220bb4b5059f2/jars/classes.jar(**.class)
+-injars /Users/cx/.gradle/caches/transforms-2/files-2.1/ea4f27cc1a809d7e0c13f5a2fdfc3b02/jars/classes.jar(**.class)
+-injars /Users/cx/.gradle/caches/transforms-2/files-2.1/f882bb80b8b51a74ab8f60d9bbe2988a/jars/classes.jar(**.class)
+-injars /Users/cx/.gradle/caches/transforms-2/files-2.1/0485920500b033518d8d623907e2722e/jars/classes.jar(**.class)
+-injars /Users/cx/.gradle/caches/transforms-2/files-2.1/0a16b74fde530aee6a7c1134debd8796/jars/classes.jar(**.class)
+-injars /Users/cx/.gradle/caches/transforms-2/files-2.1/2e0c063f0a0fc9dc1bf2577ad075f525/jars/classes.jar(**.class)
+-injars /Users/cx/.gradle/caches/transforms-2/files-2.1/85ac509f691ec3189c4addb9dd97cbc3/jars/classes.jar(**.class)
+-injars /Users/cx/.gradle/caches/transforms-2/files-2.1/9f6f587870b34e158f0c298f994093c4/jars/classes.jar(**.class)
+-injars /Users/cx/.gradle/caches/transforms-2/files-2.1/3a7be79e7ce6f832dd8ef641950d3da3/jars/classes.jar(**.class)
+-injars /Users/cx/.gradle/caches/transforms-2/files-2.1/d4ea5718e243e6a2ed7749a2aebe8ba7/jars/classes.jar(**.class)
+-injars /Users/cx/.gradle/caches/transforms-2/files-2.1/4701d5d5a7bec6338db8bb0ead814f25/jars/classes.jar(**.class)
 -injars /Users/cx/.gradle/caches/modules-2/files-2.1/com.android.support/collections/28.0.0/c1bcdade4d3cc2836130424a3f3e4182c666a745/collections-28.0.0.jar(**.class)
--injars /Users/cx/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/d48f0d32cf2ee5eb5b8b1501c7ad5c4a/jars/classes.jar(**.class)
--injars /Users/cx/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/90c003cfd13d7596fd6585f09b678489/jars/classes.jar(**.class)
--injars /Users/cx/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/015ddf45176da266e3bdc2c3d6871ba4/jars/classes.jar(**.class)
--injars /Users/cx/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/1fc2d3229c0bd27766c88dbe7b372612/jars/classes.jar(**.class)
--injars /Users/cx/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/56f28da3c1761acd41261212701ff3a8/jars/classes.jar(**.class)
--injars /Users/cx/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/f076c86b4180ec5aaed334aab0b31fb5/jars/classes.jar(**.class)
--injars /Users/cx/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/6e804c49bbbc55d0216d379eb124bea0/jars/classes.jar(**.class)
--injars /Users/cx/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/1c398141d507c5c4dbb03d92791d91ed/jars/classes.jar(**.class)
+-injars /Users/cx/.gradle/caches/transforms-2/files-2.1/fa992edce621693e6bcd9432e2c3f3f4/jars/classes.jar(**.class)
+-injars /Users/cx/.gradle/caches/transforms-2/files-2.1/60e6007ff805abbe1fa8fe178c6c654f/jars/classes.jar(**.class)
+-injars /Users/cx/.gradle/caches/transforms-2/files-2.1/aaa07e40857a415d144659e417bbe5df/jars/classes.jar(**.class)
+-injars /Users/cx/.gradle/caches/transforms-2/files-2.1/117119431224bfe477fbf17daeb46d71/jars/classes.jar(**.class)
+-injars /Users/cx/.gradle/caches/transforms-2/files-2.1/9cc559a46cc0522c4f7ffead6c9ee877/jars/classes.jar(**.class)
+-injars /Users/cx/.gradle/caches/transforms-2/files-2.1/a7232d9f3ee98cbdd34f98022a11ef5a/jars/classes.jar(**.class)
+-injars /Users/cx/.gradle/caches/transforms-2/files-2.1/6d5212fe8b72a3c1d43a1f20680021ac/jars/classes.jar(**.class)
+-injars /Users/cx/.gradle/caches/transforms-2/files-2.1/62a9f7344305d3fb5a3e5cc88ccec4a8/jars/classes.jar(**.class)
 -injars /Users/cx/.gradle/caches/modules-2/files-2.1/android.arch.lifecycle/common/1.1.1/207a6efae6a3555e326de41f76bdadd9a239cbce/common-1.1.1.jar(**.class)
--injars /Users/cx/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/003aeb08b1b95f8379903deb0e4e2031/jars/classes.jar(**.class)
+-injars /Users/cx/.gradle/caches/transforms-2/files-2.1/8f1f115f720402665765ad30f36b43c9/jars/classes.jar(**.class)
 -injars /Users/cx/.gradle/caches/modules-2/files-2.1/android.arch.core/common/1.1.1/e55b70d1f5620db124b3e85a7f4bdc7bd48d9f95/common-1.1.1.jar(**.class)
--injars /Users/cx/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/d799686474b743dd5dff58b375c2dcc2/jars/classes.jar(**.class)
+-injars /Users/cx/.gradle/caches/transforms-2/files-2.1/3a8898cb1790bf45e38f62fc5153f64d/jars/classes.jar(**.class)
+-injars /Users/cx/.gradle/caches/modules-2/files-2.1/android.arch.persistence.room/common/1.1.1/8094cc50760b9ac665a8ea76b51888f70042e2b5/common-1.1.1.jar(**.class)
+-injars /Users/cx/.gradle/caches/transforms-2/files-2.1/81795839b29a1ea5b8130ac39d34c88c/jars/classes.jar(**.class)
+-injars /Users/cx/.gradle/caches/transforms-2/files-2.1/d216728c4ec2c82f177295efc869ccdf/jars/classes.jar(**.class)
 -injars /Users/cx/.gradle/caches/modules-2/files-2.1/com.android.support/support-annotations/28.0.0/ed73f5337a002d1fd24339d5fb08c2c9d9ca60d8/support-annotations-28.0.0.jar(**.class)
 -injars /Users/cx/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.12.1/dc6d02e4e68514eff5631963e28ca7742ac69efe/okhttp-3.12.1.jar(**.class)
--injars /Users/cx/.gradle/caches/transforms-1/files-1.1/mobads-5.8.aar/85e8d5fff7fd6d2f8a8b074ad4ca5ded/jars/classes.jar(**.class)
--injars /Users/cx/.gradle/caches/transforms-1/files-1.1/mobads-5.8.aar/85e8d5fff7fd6d2f8a8b074ad4ca5ded/jars/libs/Baidu_MobAds_SDK.jar(**.class)
--injars /Users/cx/.gradle/caches/transforms-1/files-1.1/gdt-4.211.1081.aar/f2c79d083866e89ea91c7d0aea39396d/jars/classes.jar(**.class)
--injars /Users/cx/.gradle/caches/transforms-1/files-1.1/ttadsdk-2.9.5.0.aar/b44c2fa6d2fd23a789ac8b7921fc0b13/jars/classes.jar(**.class)
--injars /Users/cx/.gradle/caches/transforms-1/files-1.1/ttadsdk-2.9.5.0.aar/b44c2fa6d2fd23a789ac8b7921fc0b13/jars/libs/adhost.jar(**.class)
+-injars /Users/cx/.gradle/caches/transforms-2/files-2.1/ec54f180eee7e1f5ffbd03f191965c59/jars/classes.jar(**.class)
+-injars /Users/cx/.gradle/caches/transforms-2/files-2.1/17c9cfda28a8dd9d053e57910075ff65/jars/classes.jar(**.class)
+-injars /Users/cx/.gradle/caches/transforms-2/files-2.1/17c9cfda28a8dd9d053e57910075ff65/jars/libs/Baidu_MobAds_SDK.jar(**.class)
+-injars /Users/cx/.gradle/caches/transforms-2/files-2.1/cdc7abd75da643e4faf7f93287e8cb3d/jars/classes.jar(**.class)
+-injars /Users/cx/.gradle/caches/transforms-2/files-2.1/b22ec62a988aea46839cd753a02ccd2b/jars/classes.jar(**.class)
+-injars /Users/cx/.gradle/caches/transforms-2/files-2.1/b22ec62a988aea46839cd753a02ccd2b/jars/libs/adhost.jar(**.class)
 -injars /Users/cx/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.15.0/bc28b5a964c8f5721eb58ee3f3c47a9bcbf4f4d8/okio-1.15.0.jar(**.class)
+-injars /Users/cx/.gradle/caches/modules-2/files-2.1/com.google.guava/listenablefuture/1.0/c949a840a6acbc5268d088e47b04177bf90b3cad/listenablefuture-1.0.jar(**.class)
 -injars /Users/cx/workspace/li/ad-sdk/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes(**.class)
 -injars /Users/cx/workspace/li/ad-sdk/app/build/intermediates/transforms/mergeJavaRes/debug/0.jar(!**.class)
 -outjars /Users/cx/workspace/li/ad-sdk/app/build/intermediates/transforms/proguard/debug/0.jar
@@ -61,7 +69,7 @@
 -keepattributes *Annotation*,Signature,InnerClasses,EnclosingMethod,Exceptions,InnerClasses,Signature,Deprecated,SourceFile,LineNumberTable,*Annotation*,EnclosingMethod,*Annotation*,*Annotation*
 -verbose
 -dontnote com.android.vending.licensing.ILicensingService,com.google.vending.licensing.ILicensingService,com.google.android.vending.licensing.ILicensingService,android.support.**,androidx.**,org.apache.http.**,android.net.http.**,java.lang.invoke.**
--dontwarn android.support.**,androidx.**,android.util.FloatMath,com.androidquery.**,javax.annotation.**,org.codehaus.mojo.animal_sniffer.*,okhttp3.internal.platform.ConscryptPlatform,com.androidquery.**,tv.danmaku.**,androidx.**,dalvik.**,com.tencent.smtt.**,com.androidquery.**,tv.danmaku.**,androidx.**,dalvik.**,com.tencent.smtt.**,com.ss.**,com.bytedance.**,com.tencent.smtt.sdk.WebView,com.tencent.smtt.sdk.WebChromeClient,androidx.annotation.Nullable,androidx.annotation.NonNull,com.google.android.gms.ads.identifier.AdvertisingIdClient,com.google.android.gms.ads.identifier.AdvertisingIdClient$Info,androidx.appcompat.app.AlertDialog,androidx.appcompat.view.menu.ListMenuItemView,androidx.recyclerview.widget.RecyclerView,androidx.swiperefreshlayout.widget.SwipeRefreshLayout,androidx.viewpager.widget.ViewPager,androidx.recyclerview.widget.RecyclerView,androidx.annotation.RequiresApi,androidx.fragment.app.FragmentActivity,androidx.fragment.app.Fragment,androidx.annotation.AnyThread,androidx.annotation.WorkerThread
+-dontwarn android.support.**,androidx.**,android.util.FloatMath,com.androidquery.**,javax.annotation.**,org.codehaus.mojo.animal_sniffer.*,okhttp3.internal.platform.ConscryptPlatform,com.androidquery.**,tv.danmaku.**,androidx.**,dalvik.**,com.tencent.smtt.**,com.androidquery.**,tv.danmaku.**,androidx.**,dalvik.**,com.tencent.smtt.**,com.ss.**,com.bytedance.**,android.arch.persistence.room.paging.**,javax.annotation.**,org.codehaus.mojo.animal_sniffer.*,okhttp3.internal.platform.ConscryptPlatform,com.tencent.smtt.sdk.WebView,com.tencent.smtt.sdk.WebChromeClient,androidx.annotation.Nullable,androidx.annotation.NonNull,com.google.android.gms.ads.identifier.AdvertisingIdClient,com.google.android.gms.ads.identifier.AdvertisingIdClient$Info,androidx.appcompat.app.AlertDialog,androidx.appcompat.view.menu.ListMenuItemView,androidx.recyclerview.widget.RecyclerView,androidx.swiperefreshlayout.widget.SwipeRefreshLayout,androidx.viewpager.widget.ViewPager,androidx.recyclerview.widget.RecyclerView,androidx.annotation.RequiresApi,androidx.fragment.app.FragmentActivity,androidx.fragment.app.Fragment,androidx.annotation.AnyThread,androidx.annotation.WorkerThread
 -printconfiguration /Users/cx/workspace/li/ad-sdk/app/proguard-merged-config.txt
 -printseeds /Users/cx/workspace/li/ad-sdk/app/build/outputs/mapping/debug/seeds.txt
 
@@ -154,397 +162,457 @@
     <init>(...);
 }
 
-# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:102
+# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml:208
+-keep class android.arch.lifecycle.ProcessLifecycleOwnerInitializer {
+    <init>();
+}
+
+# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml:25
+-keep class android.support.v4.app.CoreComponentFactory {
+    <init>();
+}
+
+# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml:102
 -keep class android.support.v4.content.FileProvider {
-    <init>(...);
+    <init>();
 }
 
-# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:69
+# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml:124
+-keep class androidx.work.impl.WorkManagerInitializer {
+    <init>();
+}
+
+# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml:148
+-keep class androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy {
+    <init>();
+}
+
+# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml:158
+-keep class androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy {
+    <init>();
+}
+
+# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml:178
+-keep class androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy {
+    <init>();
+}
+
+# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml:168
+-keep class androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy {
+    <init>();
+}
+
+# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml:198
+-keep class androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver {
+    <init>();
+}
+
+# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml:187
+-keep class androidx.work.impl.background.systemalarm.RescheduleReceiver {
+    <init>();
+}
+
+# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml:131
+-keep class androidx.work.impl.background.systemalarm.SystemAlarmService {
+    <init>();
+}
+
+# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml:136
+-keep class androidx.work.impl.background.systemjob.SystemJobService {
+    <init>();
+}
+
+# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml:143
+-keep class androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver {
+    <init>();
+}
+
+# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml:69
 -keep class com.baidu.mobads.AppActivity {
-    <init>(...);
+    <init>();
 }
 
-# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:74
+# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml:74
 -keep class com.baidu.mobads.openad.FileProvider {
-    <init>(...);
+    <init>();
 }
 
-# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:125
+# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml:214
 -keep class com.baidu.mobads.production.rewardvideo.MobRewardVideoActivity {
-    <init>(...);
+    <init>();
 }
 
-# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:235
+# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml:324
 -keep class com.bytedance.embedapplog.collector.Collector {
-    <init>(...);
+    <init>();
 }
 
-# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:111
+# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml:111
 -keep class com.bytedance.sdk.openadsdk.TTFileProvider {
-    <init>(...);
+    <init>();
 }
 
-# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:228
+# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml:317
 -keep class com.bytedance.sdk.openadsdk.activity.TTDelegateActivity {
-    <init>(...);
+    <init>();
 }
 
-# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:224
+# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml:313
 -keep class com.bytedance.sdk.openadsdk.activity.TTFullScreenExpressVideoActivity {
-    <init>(...);
+    <init>();
 }
 
-# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:220
+# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml:309
 -keep class com.bytedance.sdk.openadsdk.activity.TTFullScreenVideoActivity {
-    <init>(...);
+    <init>();
 }
 
-# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:200
+# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml:289
 -keep class com.bytedance.sdk.openadsdk.activity.TTLandingPageActivity {
-    <init>(...);
+    <init>();
 }
 
-# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:204
+# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml:293
 -keep class com.bytedance.sdk.openadsdk.activity.TTPlayableLandingPageActivity {
-    <init>(...);
+    <init>();
 }
 
-# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:216
+# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml:305
 -keep class com.bytedance.sdk.openadsdk.activity.TTRewardExpressVideoActivity {
-    <init>(...);
+    <init>();
 }
 
-# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:212
+# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml:301
 -keep class com.bytedance.sdk.openadsdk.activity.TTRewardVideoActivity {
-    <init>(...);
+    <init>();
 }
 
-# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:208
+# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml:297
 -keep class com.bytedance.sdk.openadsdk.activity.TTVideoLandingPageActivity {
-    <init>(...);
+    <init>();
 }
 
-# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:120
+# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml:120
 -keep class com.bytedance.sdk.openadsdk.multipro.TTMultiProvider {
-    <init>(...);
+    <init>();
 }
 
-# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:233
+# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml:322
 -keep class com.bytedance.sdk.openadsdk.multipro.aidl.BinderPoolService {
-    <init>(...);
+    <init>();
 }
 
-# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:240
+# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml:329
 -keep class com.bytedance.tea.crash.upload.CrashUploadService {
-    <init>(...);
+    <init>();
 }
 
-# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:36
+# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml:37
 -keep class com.mjdy.ad.sample.MainActivity {
-    <init>(...);
+    <init>();
 }
 
-# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:24
+# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml:25
 -keep class com.mjdy.ad.sample.MyApplication {
-    <init>(...);
+    <init>();
 }
 
-# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:51
+# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml:52
 -keep class com.mjdy.utilcode.util.PermissionUtils$PermissionActivity {
-    <init>(...);
+    <init>();
 }
 
-# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:58
+# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml:58
 -keep class com.mjdy.utilcode.util.Utils$FileProvider4UtilCode {
-    <init>(...);
+    <init>();
 }
 
-# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:43
+# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml:44
 -keep class com.mobjump.mjadsdk.AdActivity {
-    <init>(...);
+    <init>();
 }
 
-# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:88
+# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml:88
 -keep class com.qq.e.ads.ADActivity {
-    <init>(...);
+    <init>();
 }
 
-# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:97
+# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml:97
 -keep class com.qq.e.ads.LandscapeADActivity {
-    <init>(...);
+    <init>();
 }
 
-# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:92
+# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml:92
 -keep class com.qq.e.ads.PortraitADActivity {
-    <init>(...);
+    <init>();
 }
 
-# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:140
+# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml:229
 -keep class com.qq.e.ads.RewardvideoLandscapeADActivity {
-    <init>(...);
+    <init>();
 }
 
-# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:131
+# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml:220
 -keep class com.qq.e.ads.RewardvideoPortraitADActivity {
-    <init>(...);
+    <init>();
 }
 
-# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:84
+# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml:84
 -keep class com.qq.e.comm.DownloadService {
-    <init>(...);
+    <init>();
 }
 
-# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:194
+# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml:283
 -keep class com.ss.android.downloadlib.activity.TTDelegateActivity {
-    <init>(...);
+    <init>();
 }
 
-# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:199
+# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml:288
 -keep class com.ss.android.downloadlib.core.download.DownloadReceiver {
-    <init>(...);
+    <init>();
 }
 
-# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:170
+# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml:259
 -keep class com.ss.android.socialbase.appdownloader.DownloadHandlerService {
-    <init>(...);
+    <init>();
 }
 
-# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:186
+# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml:275
 -keep class com.ss.android.socialbase.appdownloader.view.DownloadTaskDeleteActivity {
-    <init>(...);
+    <init>();
 }
 
-# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:190
+# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml:279
 -keep class com.ss.android.socialbase.appdownloader.view.JumpUnknownSourceActivity {
-    <init>(...);
+    <init>();
 }
 
-# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:151
+# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml:240
 -keep class com.ss.android.socialbase.downloader.downloader.DownloadService {
-    <init>(...);
+    <init>();
 }
 
-# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:152
+# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml:241
 -keep class com.ss.android.socialbase.downloader.downloader.IndependentProcessDownloadService {
-    <init>(...);
+    <init>();
 }
 
-# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:169
+# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml:258
 -keep class com.ss.android.socialbase.downloader.downloader.SqlDownloadCacheService {
-    <init>(...);
+    <init>();
 }
 
-# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:159
+# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml:248
 -keep class com.ss.android.socialbase.downloader.impls.DownloadHandleService {
-    <init>(...);
+    <init>();
 }
 
-# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:164
+# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml:253
 -keep class com.ss.android.socialbase.downloader.impls.RetryJobSchedulerService {
-    <init>(...);
+    <init>();
 }
 
-# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:150
+# Referenced at /Users/cx/workspace/li/ad-sdk/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml:239
 -keep class com.ss.android.socialbase.downloader.notification.DownloadNotificationService {
-    <init>(...);
+    <init>();
 }
 
-# Referenced at /Users/cx/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/5ae1fc2f943851adb79212c61fb3f270/res/layout/abc_alert_dialog_material.xml:41
+# Referenced at /Users/cx/.gradle/caches/transforms-2/files-2.1/8f2e27fee2802b11928e55186a715e74/res/layout/abc_alert_dialog_material.xml:41
 -keep class android.support.v4.widget.NestedScrollView {
-    <init>(...);
+    <init>(android.content.Context,android.util.AttributeSet);
 }
 
-# Referenced at /Users/cx/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/5ae1fc2f943851adb79212c61fb3f270/res/layout/abc_select_dialog_material.xml:23
+# Referenced at /Users/cx/.gradle/caches/transforms-2/files-2.1/8f2e27fee2802b11928e55186a715e74/res/layout/abc_select_dialog_material.xml:23
 -keep class android.support.v7.app.AlertController$RecycleListView {
-    <init>(...);
+    <init>(android.content.Context,android.util.AttributeSet);
 }
 
-# Referenced at /Users/cx/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/5ae1fc2f943851adb79212c61fb3f270/res/layout/abc_action_menu_item_layout.xml:17
+# Referenced at /Users/cx/.gradle/caches/transforms-2/files-2.1/8f2e27fee2802b11928e55186a715e74/res/layout/abc_action_menu_item_layout.xml:17
 -keep class android.support.v7.view.menu.ActionMenuItemView {
-    <init>(...);
+    <init>(android.content.Context,android.util.AttributeSet);
 }
 
-# Referenced at /Users/cx/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/5ae1fc2f943851adb79212c61fb3f270/res/layout/abc_expanded_menu_layout.xml:17
+# Referenced at /Users/cx/.gradle/caches/transforms-2/files-2.1/8f2e27fee2802b11928e55186a715e74/res/layout/abc_expanded_menu_layout.xml:17
 -keep class android.support.v7.view.menu.ExpandedMenuView {
-    <init>(...);
+    <init>(android.content.Context,android.util.AttributeSet);
 }
 
-# Referenced at /Users/cx/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/5ae1fc2f943851adb79212c61fb3f270/res/layout/abc_popup_menu_item_layout.xml:17
-# Referenced at /Users/cx/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/5ae1fc2f943851adb79212c61fb3f270/res/layout/abc_list_menu_item_layout.xml:17
-# Referenced at /Users/cx/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/5ae1fc2f943851adb79212c61fb3f270/res/layout/abc_cascading_menu_item_layout.xml:20
+# Referenced at /Users/cx/.gradle/caches/transforms-2/files-2.1/8f2e27fee2802b11928e55186a715e74/res/layout/abc_popup_menu_item_layout.xml:17
+# Referenced at /Users/cx/.gradle/caches/transforms-2/files-2.1/8f2e27fee2802b11928e55186a715e74/res/layout/abc_list_menu_item_layout.xml:17
+# Referenced at /Users/cx/.gradle/caches/transforms-2/files-2.1/8f2e27fee2802b11928e55186a715e74/res/layout/abc_cascading_menu_item_layout.xml:20
 -keep class android.support.v7.view.menu.ListMenuItemView {
-    <init>(...);
+    <init>(android.content.Context,android.util.AttributeSet);
 }
 
-# Referenced at /Users/cx/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/5ae1fc2f943851adb79212c61fb3f270/res/layout/abc_screen_toolbar.xml:27
+# Referenced at /Users/cx/.gradle/caches/transforms-2/files-2.1/8f2e27fee2802b11928e55186a715e74/res/layout/abc_screen_toolbar.xml:27
 -keep class android.support.v7.widget.ActionBarContainer {
-    <init>(...);
+    <init>(android.content.Context,android.util.AttributeSet);
 }
 
-# Referenced at /Users/cx/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/5ae1fc2f943851adb79212c61fb3f270/res/layout/abc_screen_toolbar.xml:43
-# Referenced at /Users/cx/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/5ae1fc2f943851adb79212c61fb3f270/res/layout/abc_action_mode_bar.xml:19
+# Referenced at /Users/cx/.gradle/caches/transforms-2/files-2.1/8f2e27fee2802b11928e55186a715e74/res/layout/abc_screen_toolbar.xml:43
+# Referenced at /Users/cx/.gradle/caches/transforms-2/files-2.1/8f2e27fee2802b11928e55186a715e74/res/layout/abc_action_mode_bar.xml:19
 -keep class android.support.v7.widget.ActionBarContextView {
-    <init>(...);
+    <init>(android.content.Context,android.util.AttributeSet);
 }
 
-# Referenced at /Users/cx/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/5ae1fc2f943851adb79212c61fb3f270/res/layout/abc_screen_toolbar.xml:17
+# Referenced at /Users/cx/.gradle/caches/transforms-2/files-2.1/8f2e27fee2802b11928e55186a715e74/res/layout/abc_screen_toolbar.xml:17
 -keep class android.support.v7.widget.ActionBarOverlayLayout {
-    <init>(...);
+    <init>(android.content.Context,android.util.AttributeSet);
 }
 
-# Referenced at /Users/cx/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/5ae1fc2f943851adb79212c61fb3f270/res/layout/abc_action_menu_layout.xml:17
+# Referenced at /Users/cx/.gradle/caches/transforms-2/files-2.1/8f2e27fee2802b11928e55186a715e74/res/layout/abc_action_menu_layout.xml:17
 -keep class android.support.v7.widget.ActionMenuView {
-    <init>(...);
+    <init>(android.content.Context,android.util.AttributeSet);
 }
 
-# Referenced at /Users/cx/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/5ae1fc2f943851adb79212c61fb3f270/res/layout/abc_activity_chooser_view.xml:19
+# Referenced at /Users/cx/.gradle/caches/transforms-2/files-2.1/8f2e27fee2802b11928e55186a715e74/res/layout/abc_activity_chooser_view.xml:19
 -keep class android.support.v7.widget.ActivityChooserView$InnerLayout {
-    <init>(...);
+    <init>(android.content.Context,android.util.AttributeSet);
 }
 
-# Referenced at /Users/cx/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/5ae1fc2f943851adb79212c61fb3f270/res/layout/abc_alert_dialog_material.xml:18
+# Referenced at /Users/cx/.gradle/caches/transforms-2/files-2.1/8f2e27fee2802b11928e55186a715e74/res/layout/abc_alert_dialog_material.xml:18
 -keep class android.support.v7.widget.AlertDialogLayout {
-    <init>(...);
+    <init>(android.content.Context,android.util.AttributeSet);
 }
 
-# Referenced at /Users/cx/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/5ae1fc2f943851adb79212c61fb3f270/res/layout/abc_alert_dialog_button_bar_material.xml:26
+# Referenced at /Users/cx/.gradle/caches/transforms-2/files-2.1/8f2e27fee2802b11928e55186a715e74/res/layout/abc_alert_dialog_button_bar_material.xml:26
 -keep class android.support.v7.widget.ButtonBarLayout {
-    <init>(...);
+    <init>(android.content.Context,android.util.AttributeSet);
 }
 
-# Referenced at /Users/cx/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/5ae1fc2f943851adb79212c61fb3f270/res/layout/abc_screen_content_include.xml:19
+# Referenced at /Users/cx/.gradle/caches/transforms-2/files-2.1/8f2e27fee2802b11928e55186a715e74/res/layout/abc_screen_content_include.xml:19
 -keep class android.support.v7.widget.ContentFrameLayout {
-    <init>(...);
+    <init>(android.content.Context,android.util.AttributeSet);
 }
 
-# Referenced at /Users/cx/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/5ae1fc2f943851adb79212c61fb3f270/res/layout/abc_alert_dialog_title_material.xml:45
+# Referenced at /Users/cx/.gradle/caches/transforms-2/files-2.1/8f2e27fee2802b11928e55186a715e74/res/layout/abc_alert_dialog_title_material.xml:45
 -keep class android.support.v7.widget.DialogTitle {
-    <init>(...);
+    <init>(android.content.Context,android.util.AttributeSet);
 }
 
-# Referenced at /Users/cx/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/5ae1fc2f943851adb79212c61fb3f270/res/layout/abc_screen_simple_overlay_action_mode.xml:23
+# Referenced at /Users/cx/.gradle/caches/transforms-2/files-2.1/8f2e27fee2802b11928e55186a715e74/res/layout/abc_screen_simple_overlay_action_mode.xml:23
 -keep class android.support.v7.widget.FitWindowsFrameLayout {
-    <init>(...);
+    <init>(android.content.Context,android.util.AttributeSet);
 }
 
-# Referenced at /Users/cx/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/5ae1fc2f943851adb79212c61fb3f270/res/layout/abc_screen_simple.xml:17
-# Referenced at /Users/cx/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/5ae1fc2f943851adb79212c61fb3f270/res/layout/abc_dialog_title_material.xml:22
+# Referenced at /Users/cx/.gradle/caches/transforms-2/files-2.1/8f2e27fee2802b11928e55186a715e74/res/layout/abc_screen_simple.xml:17
+# Referenced at /Users/cx/.gradle/caches/transforms-2/files-2.1/8f2e27fee2802b11928e55186a715e74/res/layout/abc_dialog_title_material.xml:22
 -keep class android.support.v7.widget.FitWindowsLinearLayout {
-    <init>(...);
+    <init>(android.content.Context,android.util.AttributeSet);
 }
 
 # Referenced at /Users/cx/workspace/li/ad-sdk/app/src/main/res/layout/news_list_activity.xml:19
 -keep class android.support.v7.widget.RecyclerView {
-    <init>(...);
+    <init>(android.content.Context,android.util.AttributeSet);
 }
 
-# Referenced at /Users/cx/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/5ae1fc2f943851adb79212c61fb3f270/res/layout/abc_search_view.xml:75
+# Referenced at /Users/cx/.gradle/caches/transforms-2/files-2.1/8f2e27fee2802b11928e55186a715e74/res/layout/abc_search_view.xml:75
 -keep class android.support.v7.widget.SearchView$SearchAutoComplete {
-    <init>(...);
+    <init>(android.content.Context,android.util.AttributeSet);
 }
 
-# Referenced at /Users/cx/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/5ae1fc2f943851adb79212c61fb3f270/res/layout/abc_screen_toolbar.xml:36
+# Referenced at /Users/cx/.gradle/caches/transforms-2/files-2.1/8f2e27fee2802b11928e55186a715e74/res/layout/abc_screen_toolbar.xml:36
 -keep class android.support.v7.widget.Toolbar {
-    <init>(...);
+    <init>(android.content.Context,android.util.AttributeSet);
 }
 
-# Referenced at /Users/cx/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/5ae1fc2f943851adb79212c61fb3f270/res/layout/abc_screen_simple_overlay_action_mode.xml:32
-# Referenced at /Users/cx/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/5ae1fc2f943851adb79212c61fb3f270/res/layout/abc_screen_simple.xml:25
+# Referenced at /Users/cx/.gradle/caches/transforms-2/files-2.1/8f2e27fee2802b11928e55186a715e74/res/layout/abc_screen_simple_overlay_action_mode.xml:32
+# Referenced at /Users/cx/.gradle/caches/transforms-2/files-2.1/8f2e27fee2802b11928e55186a715e74/res/layout/abc_screen_simple.xml:25
 -keep class android.support.v7.widget.ViewStubCompat {
-    <init>(...);
+    <init>(android.content.Context,android.util.AttributeSet);
 }
 
-# Referenced at /Users/cx/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/5ae1fc2f943851adb79212c61fb3f270/res/layout/abc_alert_dialog_title_material.xml:56
-# Referenced at /Users/cx/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/5ae1fc2f943851adb79212c61fb3f270/res/layout/abc_alert_dialog_material.xml:52
-# Referenced at /Users/cx/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/5ae1fc2f943851adb79212c61fb3f270/res/layout/abc_alert_dialog_button_bar_material.xml:43
+# Referenced at /Users/cx/.gradle/caches/transforms-2/files-2.1/8f2e27fee2802b11928e55186a715e74/res/layout/abc_alert_dialog_title_material.xml:56
+# Referenced at /Users/cx/.gradle/caches/transforms-2/files-2.1/8f2e27fee2802b11928e55186a715e74/res/layout/abc_alert_dialog_material.xml:52
+# Referenced at /Users/cx/.gradle/caches/transforms-2/files-2.1/8f2e27fee2802b11928e55186a715e74/res/layout/abc_alert_dialog_button_bar_material.xml:43
 -keep class android.widget.Space {
-    <init>(...);
+    <init>(android.content.Context,android.util.AttributeSet);
 }
 
-# Referenced at /Users/cx/.gradle/caches/transforms-1/files-1.1/ttadsdk-2.9.5.0.aar/b44c2fa6d2fd23a789ac8b7921fc0b13/res/layout/tt_activity_rewardvideo_new_bar_3_style.xml:25
-# Referenced at /Users/cx/.gradle/caches/transforms-1/files-1.1/ttadsdk-2.9.5.0.aar/b44c2fa6d2fd23a789ac8b7921fc0b13/res/layout/tt_activity_rewardvideo.xml:25
-# Referenced at /Users/cx/.gradle/caches/transforms-1/files-1.1/ttadsdk-2.9.5.0.aar/b44c2fa6d2fd23a789ac8b7921fc0b13/res/layout/tt_activity_reward_video_newstyle.xml:203
-# Referenced at /Users/cx/.gradle/caches/transforms-1/files-1.1/ttadsdk-2.9.5.0.aar/b44c2fa6d2fd23a789ac8b7921fc0b13/res/layout/tt_activity_full_video_newstyle.xml:205
-# Referenced at /Users/cx/.gradle/caches/transforms-1/files-1.1/ttadsdk-2.9.5.0.aar/b44c2fa6d2fd23a789ac8b7921fc0b13/res/layout/tt_activity_full_video_new_bar_3_style.xml:24
-# Referenced at /Users/cx/.gradle/caches/transforms-1/files-1.1/ttadsdk-2.9.5.0.aar/b44c2fa6d2fd23a789ac8b7921fc0b13/res/layout/tt_activity_full_video.xml:24
+# Referenced at /Users/cx/.gradle/caches/transforms-2/files-2.1/b22ec62a988aea46839cd753a02ccd2b/res/layout/tt_activity_rewardvideo_new_bar_3_style.xml:25
+# Referenced at /Users/cx/.gradle/caches/transforms-2/files-2.1/b22ec62a988aea46839cd753a02ccd2b/res/layout/tt_activity_rewardvideo.xml:25
+# Referenced at /Users/cx/.gradle/caches/transforms-2/files-2.1/b22ec62a988aea46839cd753a02ccd2b/res/layout/tt_activity_reward_video_newstyle.xml:203
+# Referenced at /Users/cx/.gradle/caches/transforms-2/files-2.1/b22ec62a988aea46839cd753a02ccd2b/res/layout/tt_activity_full_video_newstyle.xml:205
+# Referenced at /Users/cx/.gradle/caches/transforms-2/files-2.1/b22ec62a988aea46839cd753a02ccd2b/res/layout/tt_activity_full_video_new_bar_3_style.xml:24
+# Referenced at /Users/cx/.gradle/caches/transforms-2/files-2.1/b22ec62a988aea46839cd753a02ccd2b/res/layout/tt_activity_full_video.xml:24
 -keep class com.bytedance.sdk.openadsdk.component.reward.top.TopProxyLayout {
-    <init>(...);
+    <init>(android.content.Context,android.util.AttributeSet);
 }
 
-# Referenced at /Users/cx/.gradle/caches/transforms-1/files-1.1/ttadsdk-2.9.5.0.aar/b44c2fa6d2fd23a789ac8b7921fc0b13/res/layout/tt_activity_ttlandingpage_playable.xml:47
-# Referenced at /Users/cx/.gradle/caches/transforms-1/files-1.1/ttadsdk-2.9.5.0.aar/b44c2fa6d2fd23a789ac8b7921fc0b13/res/layout/tt_activity_rewardvideo_new_bar_3_style.xml:18
-# Referenced at /Users/cx/.gradle/caches/transforms-1/files-1.1/ttadsdk-2.9.5.0.aar/b44c2fa6d2fd23a789ac8b7921fc0b13/res/layout/tt_activity_rewardvideo.xml:18
-# Referenced at /Users/cx/.gradle/caches/transforms-1/files-1.1/ttadsdk-2.9.5.0.aar/b44c2fa6d2fd23a789ac8b7921fc0b13/res/layout/tt_activity_reward_video_newstyle.xml:191
-# Referenced at /Users/cx/.gradle/caches/transforms-1/files-1.1/ttadsdk-2.9.5.0.aar/b44c2fa6d2fd23a789ac8b7921fc0b13/res/layout/tt_activity_full_video_newstyle.xml:193
-# Referenced at /Users/cx/.gradle/caches/transforms-1/files-1.1/ttadsdk-2.9.5.0.aar/b44c2fa6d2fd23a789ac8b7921fc0b13/res/layout/tt_activity_full_video_new_bar_3_style.xml:17
-# Referenced at /Users/cx/.gradle/caches/transforms-1/files-1.1/ttadsdk-2.9.5.0.aar/b44c2fa6d2fd23a789ac8b7921fc0b13/res/layout/tt_activity_full_video.xml:17
+# Referenced at /Users/cx/.gradle/caches/transforms-2/files-2.1/b22ec62a988aea46839cd753a02ccd2b/res/layout/tt_activity_ttlandingpage_playable.xml:47
+# Referenced at /Users/cx/.gradle/caches/transforms-2/files-2.1/b22ec62a988aea46839cd753a02ccd2b/res/layout/tt_activity_rewardvideo_new_bar_3_style.xml:18
+# Referenced at /Users/cx/.gradle/caches/transforms-2/files-2.1/b22ec62a988aea46839cd753a02ccd2b/res/layout/tt_activity_rewardvideo.xml:18
+# Referenced at /Users/cx/.gradle/caches/transforms-2/files-2.1/b22ec62a988aea46839cd753a02ccd2b/res/layout/tt_activity_reward_video_newstyle.xml:191
+# Referenced at /Users/cx/.gradle/caches/transforms-2/files-2.1/b22ec62a988aea46839cd753a02ccd2b/res/layout/tt_activity_full_video_newstyle.xml:193
+# Referenced at /Users/cx/.gradle/caches/transforms-2/files-2.1/b22ec62a988aea46839cd753a02ccd2b/res/layout/tt_activity_full_video_new_bar_3_style.xml:17
+# Referenced at /Users/cx/.gradle/caches/transforms-2/files-2.1/b22ec62a988aea46839cd753a02ccd2b/res/layout/tt_activity_full_video.xml:17
 -keep class com.bytedance.sdk.openadsdk.core.widget.PlayableLoadingView {
-    <init>(...);
+    <init>(android.content.Context,android.util.AttributeSet);
 }
 
-# Referenced at /Users/cx/.gradle/caches/transforms-1/files-1.1/ttadsdk-2.9.5.0.aar/b44c2fa6d2fd23a789ac8b7921fc0b13/res/layout/tt_video_ad_cover_layout.xml:25
-# Referenced at /Users/cx/.gradle/caches/transforms-1/files-1.1/ttadsdk-2.9.5.0.aar/b44c2fa6d2fd23a789ac8b7921fc0b13/res/layout/tt_backup_feed_img_group.xml:21
-# Referenced at /Users/cx/.gradle/caches/transforms-1/files-1.1/ttadsdk-2.9.5.0.aar/b44c2fa6d2fd23a789ac8b7921fc0b13/res/layout/tt_backup_banner_layout2.xml:63
-# Referenced at /Users/cx/.gradle/caches/transforms-1/files-1.1/ttadsdk-2.9.5.0.aar/b44c2fa6d2fd23a789ac8b7921fc0b13/res/layout/tt_activity_videolandingpage.xml:75
+# Referenced at /Users/cx/.gradle/caches/transforms-2/files-2.1/b22ec62a988aea46839cd753a02ccd2b/res/layout/tt_video_ad_cover_layout.xml:25
+# Referenced at /Users/cx/.gradle/caches/transforms-2/files-2.1/b22ec62a988aea46839cd753a02ccd2b/res/layout/tt_backup_feed_img_group.xml:21
+# Referenced at /Users/cx/.gradle/caches/transforms-2/files-2.1/b22ec62a988aea46839cd753a02ccd2b/res/layout/tt_backup_banner_layout2.xml:63
+# Referenced at /Users/cx/.gradle/caches/transforms-2/files-2.1/b22ec62a988aea46839cd753a02ccd2b/res/layout/tt_activity_videolandingpage.xml:75
 -keep class com.bytedance.sdk.openadsdk.core.widget.RoundImageView {
-    <init>(...);
+    <init>(android.content.Context,android.util.AttributeSet);
 }
 
-# Referenced at /Users/cx/.gradle/caches/transforms-1/files-1.1/ttadsdk-2.9.5.0.aar/b44c2fa6d2fd23a789ac8b7921fc0b13/res/layout/tt_top_reward_dislike_2.xml:35
-# Referenced at /Users/cx/.gradle/caches/transforms-1/files-1.1/ttadsdk-2.9.5.0.aar/b44c2fa6d2fd23a789ac8b7921fc0b13/res/layout/tt_top_reward_1.xml:39
-# Referenced at /Users/cx/.gradle/caches/transforms-1/files-1.1/ttadsdk-2.9.5.0.aar/b44c2fa6d2fd23a789ac8b7921fc0b13/res/layout/tt_top_full_1.xml:23
+# Referenced at /Users/cx/.gradle/caches/transforms-2/files-2.1/b22ec62a988aea46839cd753a02ccd2b/res/layout/tt_top_reward_dislike_2.xml:35
+# Referenced at /Users/cx/.gradle/caches/transforms-2/files-2.1/b22ec62a988aea46839cd753a02ccd2b/res/layout/tt_top_reward_1.xml:39
+# Referenced at /Users/cx/.gradle/caches/transforms-2/files-2.1/b22ec62a988aea46839cd753a02ccd2b/res/layout/tt_top_full_1.xml:23
 -keep class com.bytedance.sdk.openadsdk.core.widget.ShadowImageView {
-    <init>(...);
+    <init>(android.content.Context,android.util.AttributeSet);
 }
 
-# Referenced at /Users/cx/.gradle/caches/transforms-1/files-1.1/ttadsdk-2.9.5.0.aar/b44c2fa6d2fd23a789ac8b7921fc0b13/res/layout/tt_top_reward_dislike_2.xml:8
+# Referenced at /Users/cx/.gradle/caches/transforms-2/files-2.1/b22ec62a988aea46839cd753a02ccd2b/res/layout/tt_top_reward_dislike_2.xml:8
 -keep class com.bytedance.sdk.openadsdk.core.widget.ShadowTextView {
-    <init>(...);
+    <init>(android.content.Context,android.util.AttributeSet);
 }
 
-# Referenced at /Users/cx/.gradle/caches/transforms-1/files-1.1/ttadsdk-2.9.5.0.aar/b44c2fa6d2fd23a789ac8b7921fc0b13/res/layout/tt_splash_view.xml:36
+# Referenced at /Users/cx/.gradle/caches/transforms-2/files-2.1/b22ec62a988aea46839cd753a02ccd2b/res/layout/tt_splash_view.xml:36
 -keep class com.bytedance.sdk.openadsdk.core.widget.TTCountdownView {
-    <init>(...);
+    <init>(android.content.Context,android.util.AttributeSet);
 }
 
-# Referenced at /Users/cx/.gradle/caches/transforms-1/files-1.1/ttadsdk-2.9.5.0.aar/b44c2fa6d2fd23a789ac8b7921fc0b13/res/layout/tt_backup_feed_video.xml:62
-# Referenced at /Users/cx/.gradle/caches/transforms-1/files-1.1/ttadsdk-2.9.5.0.aar/b44c2fa6d2fd23a789ac8b7921fc0b13/res/layout/tt_backup_banner_layout1.xml:53
-# Referenced at /Users/cx/.gradle/caches/transforms-1/files-1.1/ttadsdk-2.9.5.0.aar/b44c2fa6d2fd23a789ac8b7921fc0b13/res/layout/tt_activity_reward_video_newstyle.xml:67
-# Referenced at /Users/cx/.gradle/caches/transforms-1/files-1.1/ttadsdk-2.9.5.0.aar/b44c2fa6d2fd23a789ac8b7921fc0b13/res/layout/tt_activity_reward_and_full_video_new_bar.xml:64
-# Referenced at /Users/cx/.gradle/caches/transforms-1/files-1.1/ttadsdk-2.9.5.0.aar/b44c2fa6d2fd23a789ac8b7921fc0b13/res/layout/tt_activity_reward_and_full_video_bar.xml:59
-# Referenced at /Users/cx/.gradle/caches/transforms-1/files-1.1/ttadsdk-2.9.5.0.aar/b44c2fa6d2fd23a789ac8b7921fc0b13/res/layout/tt_activity_full_video_newstyle.xml:68
+# Referenced at /Users/cx/.gradle/caches/transforms-2/files-2.1/b22ec62a988aea46839cd753a02ccd2b/res/layout/tt_backup_feed_video.xml:62
+# Referenced at /Users/cx/.gradle/caches/transforms-2/files-2.1/b22ec62a988aea46839cd753a02ccd2b/res/layout/tt_backup_banner_layout1.xml:53
+# Referenced at /Users/cx/.gradle/caches/transforms-2/files-2.1/b22ec62a988aea46839cd753a02ccd2b/res/layout/tt_activity_reward_video_newstyle.xml:67
+# Referenced at /Users/cx/.gradle/caches/transforms-2/files-2.1/b22ec62a988aea46839cd753a02ccd2b/res/layout/tt_activity_reward_and_full_video_new_bar.xml:64
+# Referenced at /Users/cx/.gradle/caches/transforms-2/files-2.1/b22ec62a988aea46839cd753a02ccd2b/res/layout/tt_activity_reward_and_full_video_bar.xml:59
+# Referenced at /Users/cx/.gradle/caches/transforms-2/files-2.1/b22ec62a988aea46839cd753a02ccd2b/res/layout/tt_activity_full_video_newstyle.xml:68
 -keep class com.bytedance.sdk.openadsdk.core.widget.TTRatingBar {
-    <init>(...);
+    <init>(android.content.Context,android.util.AttributeSet);
 }
 
-# Referenced at /Users/cx/.gradle/caches/transforms-1/files-1.1/ttadsdk-2.9.5.0.aar/b44c2fa6d2fd23a789ac8b7921fc0b13/res/layout/tt_backup_feed_video.xml:22
-# Referenced at /Users/cx/.gradle/caches/transforms-1/files-1.1/ttadsdk-2.9.5.0.aar/b44c2fa6d2fd23a789ac8b7921fc0b13/res/layout/tt_activity_reward_video_newstyle.xml:26
-# Referenced at /Users/cx/.gradle/caches/transforms-1/files-1.1/ttadsdk-2.9.5.0.aar/b44c2fa6d2fd23a789ac8b7921fc0b13/res/layout/tt_activity_reward_and_full_video_new_bar.xml:21
-# Referenced at /Users/cx/.gradle/caches/transforms-1/files-1.1/ttadsdk-2.9.5.0.aar/b44c2fa6d2fd23a789ac8b7921fc0b13/res/layout/tt_activity_reward_and_full_video_bar.xml:18
-# Referenced at /Users/cx/.gradle/caches/transforms-1/files-1.1/ttadsdk-2.9.5.0.aar/b44c2fa6d2fd23a789ac8b7921fc0b13/res/layout/tt_activity_full_video_newstyle.xml:27
+# Referenced at /Users/cx/.gradle/caches/transforms-2/files-2.1/b22ec62a988aea46839cd753a02ccd2b/res/layout/tt_backup_feed_video.xml:22
+# Referenced at /Users/cx/.gradle/caches/transforms-2/files-2.1/b22ec62a988aea46839cd753a02ccd2b/res/layout/tt_activity_reward_video_newstyle.xml:26
+# Referenced at /Users/cx/.gradle/caches/transforms-2/files-2.1/b22ec62a988aea46839cd753a02ccd2b/res/layout/tt_activity_reward_and_full_video_new_bar.xml:21
+# Referenced at /Users/cx/.gradle/caches/transforms-2/files-2.1/b22ec62a988aea46839cd753a02ccd2b/res/layout/tt_activity_reward_and_full_video_bar.xml:18
+# Referenced at /Users/cx/.gradle/caches/transforms-2/files-2.1/b22ec62a988aea46839cd753a02ccd2b/res/layout/tt_activity_full_video_newstyle.xml:27
 -keep class com.bytedance.sdk.openadsdk.core.widget.TTRoundRectImageView {
-    <init>(...);
+    <init>(android.content.Context,android.util.AttributeSet);
 }
 
-# Referenced at /Users/cx/.gradle/caches/transforms-1/files-1.1/ttadsdk-2.9.5.0.aar/b44c2fa6d2fd23a789ac8b7921fc0b13/res/layout/tt_splash_view.xml:19
+# Referenced at /Users/cx/.gradle/caches/transforms-2/files-2.1/b22ec62a988aea46839cd753a02ccd2b/res/layout/tt_splash_view.xml:19
 -keep class com.bytedance.sdk.openadsdk.core.widget.gif.GifView {
-    <init>(...);
+    <init>(android.content.Context,android.util.AttributeSet);
 }
 
-# Referenced at /Users/cx/.gradle/caches/transforms-1/files-1.1/ttadsdk-2.9.5.0.aar/b44c2fa6d2fd23a789ac8b7921fc0b13/res/layout/tt_activity_videolandingpage.xml:145
-# Referenced at /Users/cx/.gradle/caches/transforms-1/files-1.1/ttadsdk-2.9.5.0.aar/b44c2fa6d2fd23a789ac8b7921fc0b13/res/layout/tt_activity_ttlandingpage_playable.xml:6
-# Referenced at /Users/cx/.gradle/caches/transforms-1/files-1.1/ttadsdk-2.9.5.0.aar/b44c2fa6d2fd23a789ac8b7921fc0b13/res/layout/tt_activity_ttlandingpage.xml:24
-# Referenced at /Users/cx/.gradle/caches/transforms-1/files-1.1/ttadsdk-2.9.5.0.aar/b44c2fa6d2fd23a789ac8b7921fc0b13/res/layout/tt_activity_reward_video_newstyle.xml:119
-# Referenced at /Users/cx/.gradle/caches/transforms-1/files-1.1/ttadsdk-2.9.5.0.aar/b44c2fa6d2fd23a789ac8b7921fc0b13/res/layout/tt_activity_reward_and_full_video_new_bar.xml:110
-# Referenced at /Users/cx/.gradle/caches/transforms-1/files-1.1/ttadsdk-2.9.5.0.aar/b44c2fa6d2fd23a789ac8b7921fc0b13/res/layout/tt_activity_reward_and_full_video_bar.xml:98
-# Referenced at /Users/cx/.gradle/caches/transforms-1/files-1.1/ttadsdk-2.9.5.0.aar/b44c2fa6d2fd23a789ac8b7921fc0b13/res/layout/tt_activity_full_video_newstyle.xml:121
+# Referenced at /Users/cx/.gradle/caches/transforms-2/files-2.1/b22ec62a988aea46839cd753a02ccd2b/res/layout/tt_activity_videolandingpage.xml:145
+# Referenced at /Users/cx/.gradle/caches/transforms-2/files-2.1/b22ec62a988aea46839cd753a02ccd2b/res/layout/tt_activity_ttlandingpage_playable.xml:6
+# Referenced at /Users/cx/.gradle/caches/transforms-2/files-2.1/b22ec62a988aea46839cd753a02ccd2b/res/layout/tt_activity_ttlandingpage.xml:24
+# Referenced at /Users/cx/.gradle/caches/transforms-2/files-2.1/b22ec62a988aea46839cd753a02ccd2b/res/layout/tt_activity_reward_video_newstyle.xml:119
+# Referenced at /Users/cx/.gradle/caches/transforms-2/files-2.1/b22ec62a988aea46839cd753a02ccd2b/res/layout/tt_activity_reward_and_full_video_new_bar.xml:110
+# Referenced at /Users/cx/.gradle/caches/transforms-2/files-2.1/b22ec62a988aea46839cd753a02ccd2b/res/layout/tt_activity_reward_and_full_video_bar.xml:98
+# Referenced at /Users/cx/.gradle/caches/transforms-2/files-2.1/b22ec62a988aea46839cd753a02ccd2b/res/layout/tt_activity_full_video_newstyle.xml:121
 -keep class com.bytedance.sdk.openadsdk.core.widget.webview.SSWebView {
-    <init>(...);
+    <init>(android.content.Context,android.util.AttributeSet);
 }
 
-# Referenced at /Users/cx/.gradle/caches/transforms-1/files-1.1/ttadsdk-2.9.5.0.aar/b44c2fa6d2fd23a789ac8b7921fc0b13/res/layout/tt_dislike_dialog_layout.xml:48
+# Referenced at /Users/cx/.gradle/caches/transforms-2/files-2.1/b22ec62a988aea46839cd753a02ccd2b/res/layout/tt_dislike_dialog_layout.xml:48
 -keep class com.bytedance.sdk.openadsdk.dislike.TTDislikeListView {
-    <init>(...);
+    <init>(android.content.Context,android.util.AttributeSet);
 }
 
 # Copyright (C) 2018 The Android Open Source Project
@@ -819,6 +887,22 @@
     <init>(int,java.lang.String);
 }
 
+-keep class * extends androidx.work.Worker
+
+-keep class * extends androidx.work.InputMerger
+
+# Keep all constructors on ListenableWorker, Worker (also marked with @Keep)
+-keep public class * extends androidx.work.ListenableWorker {
+    public <init>(...);
+}
+
+# We need to keep WorkerParameters for the ListenableWorker constructor
+-keep class androidx.work.WorkerParameters
+
+-keep class * extends android.arch.lifecycle.AndroidViewModel {
+    <init>(android.app.Application);
+}
+
 # Copyright (C) 2016 The Android Open Source Project
 # 
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -837,6 +921,8 @@
     void set*(***);
     *** get*();
 }
+
+-keep public class * extends android.arch.persistence.room.RoomDatabase
 
 # Copyright (C) 2016 The Android Open Source Project
 # 
@@ -894,6 +980,29 @@
 -keep class * extends android.arch.lifecycle.ViewModel {
     <init>();
 }
+
+-keep @android.support.annotation.Keep class * {
+    <fields>;
+    <methods>;
+}
+
+-keepclasseswithmembers class * {
+    @android.support.annotation.Keep
+    <methods>;
+}
+
+-keepclasseswithmembers class * {
+    @android.support.annotation.Keep
+    <fields>;
+}
+
+-keepclasseswithmembers class * {
+    @android.support.annotation.Keep
+    <init>(...);
+}
+
+# A resource is loaded with a relative path so the package of this class must be preserved.
+-keep,allowshrinking class okhttp3.internal.publicsuffix.PublicSuffixDatabase
 
 -keep class com.qq.e.** {
     public protected <fields>;

@@ -1,13 +1,13 @@
-# MJ广告SDK－－接入说明文档 V1.1.9
+# MJ广告SDK－－接入说明文档 V1.2.6
 ## 1. SDK集成
 
 ```
 // 必选
-implementation 'com.mjdy.ad:base:1.1.9'
+implementation 'com.mjdy.ad:base:1.2.6'
 
 // 可选
 implementation 'com.mjdy.ad:bd:1.0.2'   // 百度
-implementation 'com.mjdy.ad:gdt:1.0.2'  // 广点通
+implementation 'com.mjdy.ad:gdt:1.0.3'  // 广点通
 implementation 'com.mjdy.ad:tt:1.0.5'  // 头条
 
 
@@ -41,6 +41,21 @@ allprojects {
 MJAd.init("this","yourAppId");
 ```
 > yourAppId 需要替换为您的ID
+
+#### 额外的参数
+OAID 和 CHANNEL 可在init里直接传值，也可稍后单独赋值
+
+以下两种方式均可
+
+```
+        MJAd.init(this,"appId","oaid","channel");
+
+```
+
+```
+        MJAd.setOaid("oaid");
+        MJAd.setChannel("channel");
+```
 
 ####  如果您打包App时的targetSdkVersion >= 23：请先获取到SDK要求的所有权限，然后再调用SDK的广告接口。需要动态申请的权限有 
 ```
@@ -76,7 +91,7 @@ MJAd.init("this","yourAppId");
 ---| --- | --- | ---
 activity | activity | 是| 必须是activity
 posId |  广告位代码 | 是 | 
-container | 容器 | 否 | ViewGroup 
+container | 容器 | 否 | ViewGroup  
 width | 宽度 | 否 |  单位dp，默认屏幕宽度dp
 adCount | 请求广告数量 | 否| 默认 1
 timeout | 请求广告超时 | 否 | 单位毫秒，默认 3000
@@ -138,6 +153,8 @@ PLATFORM_TT | 4 | 头条
 
 
 # 更改记录
+## 1.2.6
+1. 强化了预加载的逻辑
 ## 1.1.9
 1. 去除广告位类型，统一为showAd
 

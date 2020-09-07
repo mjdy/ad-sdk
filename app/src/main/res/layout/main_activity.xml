@@ -8,16 +8,38 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/btn_show_ad"
+        android:id="@+id/btn_ad_container"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="容器显示广告" />
+        android:text="传入container测试"></Button>
 
-    <Button
-        android:id="@+id/btn_get_ad"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="获取广告自处理" />
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_ad_load"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="预加载广告" />
+
+        <Button
+            android:id="@+id/btn_ad_show"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="显示广告" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="先加载广告，然后再展示"></TextView>
+
 
     <LinearLayout
         android:id="@+id/ll_container"
