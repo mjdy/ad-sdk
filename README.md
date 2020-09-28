@@ -9,6 +9,7 @@ implementation 'com.mjdy.ad:base:1.2.6'
 implementation 'com.mjdy.ad:bd:1.0.2'   // 百度
 implementation 'com.mjdy.ad:gdt:1.0.3'  // 广点通
 implementation 'com.mjdy.ad:tt:1.0.5'  // 头条
+implementation 'com.mjdy.ad:ks:1.0.0'  // 快手
 
 
 ```
@@ -27,6 +28,7 @@ allprojects {
          
         maven { url "https://jitpack.io" }
         maven { url "https://raw.githubusercontent.com/mjdy/maven/master" }
+        maven { url 'https://dl.bintray.com/7nc/mjdy' }
 
     }
 }
@@ -153,6 +155,8 @@ PLATFORM_TT | 4 | 头条
 
 
 # 更改记录
+## 1.3.7
+1. 新增了快手平台
 ## 1.2.6
 1. 强化了预加载的逻辑
 ## 1.1.9

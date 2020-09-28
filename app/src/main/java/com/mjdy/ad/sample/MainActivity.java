@@ -28,6 +28,8 @@ public class MainActivity extends AppCompatActivity {
 
     TextView tv_status;
 
+    public static final String POS_ID = "15585712";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -53,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
                 MJAdConfig adConfig = new MJAdConfig.Builder()
                         .activity(activity)
                         .container(ll_container)
-                        .posId("15585712")
+                        .posId(POS_ID)
                         .adCount(1)
                         .build();
 
@@ -91,7 +93,7 @@ public class MainActivity extends AppCompatActivity {
 
                 MJAdConfig adConfig = new MJAdConfig.Builder()
                         .activity(activity)
-                        .posId("15585712")
+                        .posId(POS_ID)
                         .adCount(1)
                         .build();
 
