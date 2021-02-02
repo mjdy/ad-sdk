@@ -3,13 +3,12 @@
 
 ```
 // 必选
-implementation 'com.mjdy.ad:base:1.2.6'
+implementation 'com.mjdy.ad:base:1.6.6'
 
 // 可选
-implementation 'com.mjdy.ad:bd:1.0.2'   // 百度
 implementation 'com.mjdy.ad:gdt:1.0.3'  // 广点通
-implementation 'com.mjdy.ad:tt:1.0.5'  // 头条
-implementation 'com.mjdy.ad:ks:1.0.0'  // 快手
+implementation 'com.mjdy.ad:tt:1.0.8'  // 头条
+implementation 'com.mjdy.ad:ks:1.0.1'  // 快手
 
 
 ```
@@ -18,7 +17,7 @@ implementation 'com.mjdy.ad:ks:1.0.0'  // 快手
 ### 2.1 初始化
 
 
-在项目根目录的 **build.gradle** 添加如下两条maven库地址：
+在项目根目录的 **build.gradle** 添加如下maven库地址：
 
 ```
 allprojects {
@@ -40,24 +39,16 @@ allprojects {
 在application的onCreate里面加入
 
 ```
-MJAd.init("this","yourAppId");
+ MJAd.init(this,"yourAppId","oaid","channel");
 ```
-> yourAppId 需要替换为您的ID
+> yourAppId 需要替换为您的ID，非空
+> 
+> android 10 及以上需要 oaid ，其他版本可传空
+> 
+> channel 为自定义渠道，可为空
 
-#### 额外的参数
-OAID 和 CHANNEL 可在init里直接传值，也可稍后单独赋值
 
-以下两种方式均可
 
-```
-        MJAd.init(this,"appId","oaid","channel");
-
-```
-
-```
-        MJAd.setOaid("oaid");
-        MJAd.setChannel("channel");
-```
 
 ####  如果您打包App时的targetSdkVersion >= 23：请先获取到SDK要求的所有权限，然后再调用SDK的广告接口。需要动态申请的权限有 
 ```
@@ -69,29 +60,80 @@ OAID 和 CHANNEL 可在init里直接传值，也可稍后单独赋值
 
 ### 2.2 请求显示广告
 
+显示广告有两种方式
+
+1. app传入容器，由sdk控制，加载完即显示
+2. app获取广告，app自行控制显示时机，俗称 预加载
+
+> 两种加载方式，通过 **container** 这个参数控制。 app传入 container，即sdk控制。app不传 container，即预加载，app控制
+
+### 2.2.1 sdk控制显示
+
 
 ```
                 MJAdConfig adConfig = new MJAdConfig.Builder()
                         .activity(activity)
+                        .container(container_view)
                         .posId("adPosId")
                         .build();
 
                 MJAd.showAd(adConfig, new MJAdListener() {
                     @Override
                     public void onAdLoadSuccess(List<MJAdView> adViewList) {
-
+							// 无需处理，sdk加载完广告即可显示
          
                     }
                 });
 ```
 
-构造一个 **MJAdConfig** ，然后调用 **MJAd.showAd(config,listener)**
+### 2.2.2 预加载，app控制显示
+
+```
+		
+		MJAdView mjAdView;
+		   
+		MJAdConfig adConfig = new MJAdConfig.Builder()
+		    .activity(activity)
+		    .posId("adPosId")
+		    .build();
+			
+		MJAd.showAd(adConfig, new MJAdListener() {
+			@Override
+			public void onAdLoadSuccess(List<MJAdView> adViewList) {
+			    
+					mjAdView = adViewList.get(0); // 拿到广告view
+					
+					mjAdView.show(container_view); // 在需要的时机调用 show  即可显示
+			 
+			}
+		});
+			    
+			    
+		
+
+```
+
+### 2.2.2.1 跨页面预加载
+有些场景，会对广告显示的速度有极高的要求，比如新开一个activity,刚进来就要显示广告。即便用了以上的预加载方式，也需要有一个加载过程，无法满足需求。所以提供了 跨页面预加载，即可以在A页面加载广告，在B页面直接展示。但这种方式会有资源浪费的情况，且对性能会有影响，切勿滥用。跨页面预加载的位置，建议不超过6个
+
+
+```
+     String[] posIds = new String[]{"posId1","posId2"};
+     MJAdConfig config = new MJAdConfig.Builder().activity(this).posId(posIds).build();
+     MJAd.preLoad(config);
+```
+
+> 建议在MainActivity中调用；
+> activity 参数必须为 activity；
+> posId 可为数组；
+> MJAd.preLoad 只调用一次即可；
+> 声明完即可，后面使用方式和预加载一样
 
 ### MJAdConfig
 
    字段  | 说明 | 是否必须 | 备注
 ---| --- | --- | ---
-activity | activity | 是| 必须是activity
+activity | activity | 是| 最好是activity
 posId |  广告位代码 | 是 | 
 container | 容器 | 否 | ViewGroup  
 width | 宽度 | 否 |  单位dp，默认屏幕宽度dp
@@ -107,10 +149,7 @@ SDK已经处理，无需额外操作
 ### 3.2 Sample
 本工程为sample工程，可作为集成参考
 
-### 3.3 已知问题
-1. 第一次运行sample ，需要获取百度or广点通的相关数据，在数据获取成功前，请求广告会失败。网络正常的情况下，一般5秒后即可
-
-### 3.4 错误码
+### 3.3 错误码
 
 **onAdLoadFail** 方法里提供了 ```ErrorModel``` 参数。
 
@@ -134,7 +173,7 @@ sdk提供了 **ErrorModel** 类 , 错误码常量可通过  ```ErrorModel.ERROR_
 ---| --- | ---
 ERROR_LOADING | 1001 |  sdk正在加载中，需等待sdk加载完毕
 ERROR\_LOADED_FAIL | 1002 | sdk加载失败，建议重启app
-ERROR\_POSID_NULL | 1003 | 广告位id未空
+ERROR\_POSID_NULL | 1003 | 广告位id为空
 ERROR_PERMISSION | 1004 | 没有给予PHONE or STORAGE  权限
 ERROR\_POSID_ERROR | 1005 |  广告位id错误
 
@@ -155,6 +194,8 @@ PLATFORM_TT | 4 | 头条
 
 
 # 更改记录
+## 1.6.6
+1. 替换为反屏蔽包
 ## 1.3.7
 1. 新增了快手平台
 ## 1.2.6
