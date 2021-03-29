@@ -6,6 +6,7 @@ android {
         applicationId "com.mjdy.ad.sample"
         minSdkVersion 16
         targetSdkVersion 28
+        multiDexEnabled true
         versionCode 1
         versionName "1.0"
     }
@@ -27,12 +28,12 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.0.0'
 
     // 必选
-    implementation 'com.mjdy.ad:base:1.6.6'
+    implementation 'com.mjdy.ad:base:1.7.7'
 
     // 可选
     implementation 'com.mjdy.ad:gdt:1.0.3'  // 广点通
     implementation 'com.mjdy.ad:tt:1.0.8'  // 头条
-    implementation 'com.mjdy.ad:ks:1.0.1'  // 快手
+    implementation 'com.mjdy.ad:ks:1.0.2'  // 快手
 
     compileOnly 'com.umeng.umsdk:analytics:8.0.0'
     compileOnly 'com.umeng.umsdk:common:2.0.0'

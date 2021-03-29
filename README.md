@@ -1,14 +1,14 @@
-# MJ广告SDK－－接入说明文档 V1.6.6
+# MJ广告SDK－－接入说明文档 V1.7.7
 ## 1. SDK集成
 
 ```
 // 必选
-implementation 'com.mjdy.ad:base:1.6.6'
+implementation 'com.mjdy.ad:base:1.7.7'
 
 // 可选
 implementation 'com.mjdy.ad:gdt:1.0.3'  // 广点通
 implementation 'com.mjdy.ad:tt:1.0.8'  // 头条
-implementation 'com.mjdy.ad:ks:1.0.1'  // 快手
+implementation 'com.mjdy.ad:ks:1.0.2'  // 快手
 
 
 ```
@@ -194,6 +194,11 @@ PLATFORM_TT | 4 | 头条
 
 
 # 更改记录
+## 1.7.7
+1. 修复了配置文件为空导致的加载失败
+2. 缩短了激活时间
+3. 修复了激励视频显示问题
+
 ## 1.6.6
 1. 替换为反屏蔽包
 ## 1.3.7
