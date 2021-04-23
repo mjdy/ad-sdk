@@ -4,7 +4,7 @@ android {
     compileSdkVersion 28
     defaultConfig {
         applicationId "com.mjdy.ad.sample"
-        minSdkVersion 16
+        minSdkVersion 21
         targetSdkVersion 28
         multiDexEnabled true
         versionCode 1
@@ -28,7 +28,7 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.0.0'
 
     // 必选
-    implementation 'com.mjdy.ad:base:1.7.7'
+    implementation 'com.mjdy.ad:base:1.8.2'
 
     // 可选
     implementation 'com.mjdy.ad:gdt:1.0.3'  // 广点通

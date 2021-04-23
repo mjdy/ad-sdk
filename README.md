@@ -1,9 +1,9 @@
-# MJ广告SDK－－接入说明文档 V1.7.7
+# MJ广告SDK－－接入说明文档 V1.8.2
 ## 1. SDK集成
 
 ```
 // 必选
-implementation 'com.mjdy.ad:base:1.7.7'
+implementation 'com.mjdy.ad:base:1.8.2'
 
 // 可选
 implementation 'com.mjdy.ad:gdt:1.0.3'  // 广点通
@@ -39,13 +39,11 @@ allprojects {
 在application的onCreate里面加入
 
 ```
- MJAd.init(this,"yourAppId","oaid","channel");
+ MJAd.init(this,"yourAppId","yourChannel");
 ```
 > yourAppId 需要替换为您的ID，非空
 > 
-> android 10 及以上需要 oaid ，其他版本可传空
-> 
-> channel 为自定义渠道，可为空
+> yourChannel 为自定义渠道，可为空
 
 
 
@@ -194,6 +192,8 @@ PLATFORM_TT | 4 | 头条
 
 
 # 更改记录
+## 1.8.2
+1. sdk集成oaid，无需app层传入
 ## 1.7.7
 1. 修复了配置文件为空导致的加载失败
 2. 缩短了激活时间
