@@ -1,9 +1,9 @@
-# MJ广告SDK－－接入说明文档 V1.8.2
+# MJ广告SDK－－接入说明文档 V1.8.5
 ## 1. SDK集成
 
 ```
 // 必选
-implementation 'com.mjdy.ad:base:1.8.2'
+implementation 'com.mjdy.ad:base:1.8.5'
 
 // 可选
 implementation 'com.mjdy.ad:gdt:1.0.3'  // 广点通
@@ -127,6 +127,7 @@ allprojects {
 > MJAd.preLoad 只调用一次即可；
 > 声明完即可，后面使用方式和预加载一样
 
+
 ### MJAdConfig
 
    字段  | 说明 | 是否必须 | 备注
@@ -192,8 +193,12 @@ PLATFORM_TT | 4 | 头条
 
 
 # 更改记录
+## 1.8.5
+1. 修复miui获取oaid的问题
+
 ## 1.8.2
 1. sdk集成oaid，无需app层传入
+
 ## 1.7.7
 1. 修复了配置文件为空导致的加载失败
 2. 缩短了激活时间
@@ -201,10 +206,16 @@ PLATFORM_TT | 4 | 头条
 
 ## 1.6.6
 1. 替换为反屏蔽包
+
+
 ## 1.3.7
 1. 新增了快手平台
+
+
 ## 1.2.6
 1. 强化了预加载的逻辑
+
+
 ## 1.1.9
 1. 去除广告位类型，统一为showAd
 
