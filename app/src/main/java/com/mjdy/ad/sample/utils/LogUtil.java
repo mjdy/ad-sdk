@@ -1,4 +1,4 @@
-package com.mjdy.ad.sample;
+package com.mjdy.ad.sample.utils;
 
 import android.util.Log;
 
