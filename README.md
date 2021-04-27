@@ -1,9 +1,9 @@
-# MJ广告SDK－－接入说明文档 V1.8.5
+# MJ广告SDK－－接入说明文档 V1.8.6
 ## 1. SDK集成
 
 ```
 // 必选
-implementation 'com.mjdy.ad:base:1.8.5'
+implementation 'com.mjdy.ad:base:1.8.6'
 
 // 可选
 implementation 'com.mjdy.ad:gdt:1.0.3'  // 广点通
@@ -128,6 +128,9 @@ allprojects {
 > 声明完即可，后面使用方式和预加载一样
 
 
+### 2.2.3 mjAdView
+1. 通过 mjAdView.getPrice() 可以获得当前广告的价格
+
 ### MJAdConfig
 
    字段  | 说明 | 是否必须 | 备注
@@ -193,6 +196,10 @@ PLATFORM_TT | 4 | 头条
 
 
 # 更改记录
+## 1.8.6
+1. 新增快手激励视频模板渲染
+2. 新增 mjAdView.getPrice()
+
 ## 1.8.5
 1. 修复miui获取oaid的问题
 

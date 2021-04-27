@@ -28,7 +28,7 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.0.0'
 
     // 必选
-    implementation 'com.mjdy.ad:base:1.8.5'
+    implementation 'com.mjdy.ad:base:1.8.6'
 
     // 可选
     implementation 'com.mjdy.ad:gdt:1.0.3'  // 广点通
