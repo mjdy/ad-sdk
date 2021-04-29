@@ -1,14 +1,15 @@
-# MJ广告SDK－－接入说明文档 V1.8.6
+# MJ广告SDK－－接入说明文档 V1.8.7
 ## 1. SDK集成
 
 ```
 // 必选
-implementation 'com.mjdy.ad:base:1.8.6'
+implementation 'com.mjdy.ad:base:1.8.7'
 
 // 可选
 implementation 'com.mjdy.ad:gdt:1.0.3'  // 广点通
 implementation 'com.mjdy.ad:tt:1.0.8'  // 头条
 implementation 'com.mjdy.ad:ks:1.0.2'  // 快手
+implementation 'com.mjdy.ad:bd:1.0.9'  // 百度
 
 
 ```
@@ -196,6 +197,10 @@ PLATFORM_TT | 4 | 头条
 
 
 # 更改记录
+## 1.8.7
+1. 新增百度平台，支持 开屏 和 激励视频
+2. 修复激励视频可能引起的内存溢出 
+
 ## 1.8.6
 1. 新增快手激励视频模板渲染
 2. 新增 mjAdView.getPrice()
