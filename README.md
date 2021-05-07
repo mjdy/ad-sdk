@@ -1,15 +1,15 @@
-# MJ广告SDK－－接入说明文档 V1.8.7
+# MJ广告SDK－－接入说明文档 V1.8.9
 ## 1. SDK集成
 
 ```
 // 必选
-implementation 'com.mjdy.ad:base:1.8.7'
+implementation 'com.mjdy.ad:base:1.8.9'
 
 // 可选
-implementation 'com.mjdy.ad:gdt:1.0.3'  // 广点通
-implementation 'com.mjdy.ad:tt:1.0.8'  // 头条
-implementation 'com.mjdy.ad:ks:1.0.2'  // 快手
-implementation 'com.mjdy.ad:bd:1.0.9'  // 百度
+implementation 'com.mjdy.ad:gdt:1.0.4'  // 广点通
+implementation 'com.mjdy.ad:tt:1.0.9'  // 头条
+implementation 'com.mjdy.ad:ks:1.0.4'  // 快手
+implementation 'com.mjdy.ad:bd:1.1.0'  // 百度
 
 
 ```
@@ -25,10 +25,10 @@ allprojects {
     repositories {
     
         ...
-         
+
         maven { url "https://jitpack.io" }
-        maven { url "https://raw.githubusercontent.com/mjdy/maven/master" }
-        maven { url 'https://dl.bintray.com/7nc/mjdy' }
+        maven { url 'http://maven.7nc.top/repository/mjdy/' }
+
 
     }
 }
@@ -197,6 +197,9 @@ PLATFORM_TT | 4 | 头条
 
 
 # 更改记录
+## 1.8.9
+1. 替换jcenter源
+
 ## 1.8.7
 1. 新增百度平台，支持 开屏 和 激励视频
 2. 修复激励视频可能引起的内存溢出 
