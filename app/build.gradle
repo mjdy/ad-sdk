@@ -28,12 +28,12 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.0.0'
 
     // 必选
-    implementation 'com.mjdy.ad:base:1.8.9'
+    implementation 'com.mjdy.ad:base:1.9.0'
 
     // 可选
-    implementation 'com.mjdy.ad:gdt:1.0.4'  // 广点通
+    implementation 'com.mjdy.ad:gdt:1.0.5'  // 广点通
     implementation 'com.mjdy.ad:tt:1.0.9'  // 头条
-    implementation 'com.mjdy.ad:ks:1.0.4' // 快手
+    implementation 'com.mjdy.ad:ks:1.0.5' // 快手
     implementation 'com.mjdy.ad:bd:1.1.0' // 百度
 
     // 假设app使用了友盟。 没有也无所谓

@@ -3,12 +3,12 @@
 
 ```
 // 必选
-implementation 'com.mjdy.ad:base:1.8.9'
+implementation 'com.mjdy.ad:base:1.9.0'
 
 // 可选
-implementation 'com.mjdy.ad:gdt:1.0.4'  // 广点通
+implementation 'com.mjdy.ad:gdt:1.0.5'  // 广点通
 implementation 'com.mjdy.ad:tt:1.0.9'  // 头条
-implementation 'com.mjdy.ad:ks:1.0.4'  // 快手
+implementation 'com.mjdy.ad:ks:1.0.5'  // 快手
 implementation 'com.mjdy.ad:bd:1.1.0'  // 百度
 
 
@@ -197,6 +197,10 @@ PLATFORM_TT | 4 | 头条
 
 
 # 更改记录
+## 1.9.0
+1. 优化了代码位的分配
+
+
 ## 1.8.9
 1. 替换jcenter源
 
