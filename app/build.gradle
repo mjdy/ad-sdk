@@ -21,20 +21,26 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+    lintOptions {
+        abortOnError false
+    }
 }
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'androidx.appcompat:appcompat:1.0.0'
 
-    // 必选
-    implementation 'com.mjdy.ad:base:1.9.0'
+    implementation 'com.mjdy.ad:sdk:1.9.6'
 
-    // 可选
-    implementation 'com.mjdy.ad:gdt:1.0.5'  // 广点通
-    implementation 'com.mjdy.ad:tt:1.0.9'  // 头条
-    implementation 'com.mjdy.ad:ks:1.0.5' // 快手
-    implementation 'com.mjdy.ad:bd:1.1.0' // 百度
+
+//  如果有不需要的广告平台，可以选择 exclude 。不能全部exclude，否则无法显示广告
+//    implementation ('com.mjdy.ad:sdk:1.9.6'){
+//        exclude group: 'com.mjdy.ad', module: 'gdt' // 广点通
+//        exclude group: 'com.mjdy.ad', module: 'tt'  // 头条
+//        exclude group: 'com.mjdy.ad', module: 'bd'  // 百度
+//        exclude group: 'com.mjdy.ad', module: 'ks'  // 快手
+//    }
 
     // 假设app使用了友盟。 没有也无所谓
     implementation 'com.umeng.umsdk:common:9.3.8'

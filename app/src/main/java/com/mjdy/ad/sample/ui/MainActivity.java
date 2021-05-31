@@ -19,13 +19,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_activity);
 
-        findViewById(R.id.btn_sdk_handle).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // sdk处理显示广告，获取广告即显示，需要app层提供显示广告所用的容器
-                startActivity(new Intent(MainActivity.this, SdkHandleActivity.class));
-            }
-        });
 
         findViewById(R.id.btn_app_handle).setOnClickListener(new View.OnClickListener() {
             @Override

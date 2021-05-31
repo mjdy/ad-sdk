@@ -19,7 +19,6 @@
         </activity>
 
         <activity android:name=".ui.AppHandleActivity"></activity>
-        <activity android:name=".ui.SdkHandleActivity"></activity>
     </application>
 
 </manifest>

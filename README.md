@@ -1,21 +1,5 @@
-# MJ广告SDK－－接入说明文档 V1.8.9
+# MJ广告SDK－－接入说明文档 V1.9.6
 ## 1. SDK集成
-
-```
-// 必选
-implementation 'com.mjdy.ad:base:1.9.0'
-
-// 可选
-implementation 'com.mjdy.ad:gdt:1.0.5'  // 广点通
-implementation 'com.mjdy.ad:tt:1.0.9'  // 头条
-implementation 'com.mjdy.ad:ks:1.0.5'  // 快手
-implementation 'com.mjdy.ad:bd:1.1.0'  // 百度
-
-
-```
-
-## 2. 接入代码
-### 2.1 初始化
 
 
 在项目根目录的 **build.gradle** 添加如下maven库地址：
@@ -33,6 +17,25 @@ allprojects {
     }
 }
 ```
+
+
+在app层 **build.gradle** 里添加如下依赖：
+
+```
+dependencies {
+		
+		...
+		
+		implementation 'com.mjdy.ad:sdk:1.9.6'
+
+}
+```
+
+
+## 2. 接入代码
+### 2.1 初始化
+
+
 
 
 
@@ -59,33 +62,8 @@ allprojects {
 
 ### 2.2 请求显示广告
 
-显示广告有两种方式
+### 2.2.1 配置config后，获取mjadView，在适当的时机，调用show
 
-1. app传入容器，由sdk控制，加载完即显示
-2. app获取广告，app自行控制显示时机，俗称 预加载
-
-> 两种加载方式，通过 **container** 这个参数控制。 app传入 container，即sdk控制。app不传 container，即预加载，app控制
-
-### 2.2.1 sdk控制显示
-
-
-```
-                MJAdConfig adConfig = new MJAdConfig.Builder()
-                        .activity(activity)
-                        .container(container_view)
-                        .posId("adPosId")
-                        .build();
-
-                MJAd.showAd(adConfig, new MJAdListener() {
-                    @Override
-                    public void onAdLoadSuccess(List<MJAdView> adViewList) {
-							// 无需处理，sdk加载完广告即可显示
-         
-                    }
-                });
-```
-
-### 2.2.2 预加载，app控制显示
 
 ```
 		
@@ -112,8 +90,8 @@ allprojects {
 
 ```
 
-### 2.2.2.1 跨页面预加载
-有些场景，会对广告显示的速度有极高的要求，比如新开一个activity,刚进来就要显示广告。即便用了以上的预加载方式，也需要有一个加载过程，无法满足需求。所以提供了 跨页面预加载，即可以在A页面加载广告，在B页面直接展示。但这种方式会有资源浪费的情况，且对性能会有影响，切勿滥用。跨页面预加载的位置，建议不超过6个
+### 2.2.2 sdk自动预加载
+sdk自动为指定的posId缓存广告，sdk持有一个广告池的概念，池中始终持有一个广告实例。在app层索要广告时，将池中的广告给app层，同时加载一个新的广告，放入池中。这样会提高app层获取广告的效率，但会有资源浪费的情况，且对性能会有影响，切勿滥用，自动预加载的位置，建议不超过6个
 
 
 ```
@@ -122,12 +100,11 @@ allprojects {
      MJAd.preLoad(config);
 ```
 
-> 建议在MainActivity中调用；
-> activity 参数必须为 activity；
-> posId 可为数组；
-> MJAd.preLoad 只调用一次即可；
-> 声明完即可，后面使用方式和预加载一样
-
+1. preLoad 中的activity一定要常驻，建议在MainActivity中调用；
+2. activity 参数必须为 activity；
+3. posId 可为数组；
+4. MJAd.preLoad 只调用一次即可；
+5. 可通过mjAdView.isPreLoad()来获得此次加载，是否为自动预加载
 
 ### 2.2.3 mjAdView
 1. 通过 mjAdView.getPrice() 可以获得当前广告的价格
@@ -138,7 +115,6 @@ allprojects {
 ---| --- | --- | ---
 activity | activity | 是| 最好是activity
 posId |  广告位代码 | 是 | 
-container | 容器 | 否 | ViewGroup  
 width | 宽度 | 否 |  单位dp，默认屏幕宽度dp
 adCount | 请求广告数量 | 否| 默认 1
 timeout | 请求广告超时 | 否 | 单位毫秒，默认 3000
@@ -151,8 +127,33 @@ refreshTime | 广告刷新时间 | 否 |
 SDK已经处理，无需额外操作
 ### 3.2 Sample
 本工程为sample工程，可作为集成参考
+### 3.3 集成报错
+#### 3.3.1 AAPT: error: unexpected element \<queries\> found in <manifest>
+该错误出现原因为头条sdk使用了android 11的字段，导致旧版本不支持。解决方案为：更改根目录下 build.gradle里的 **classpath 'com.android.tools.build:gradle** 版本号，改为如下版本中任一即可
 
-### 3.3 错误码
+- 3.3.3
+- 3.4.3
+- 3.5.4
+- 3.6.4
+- 4.0.1
+
+### 3.4 sdk大小优化
+
+本sdk默认集成了 头条，快手，广点通，百度4家广告平台。如果明确不需要某一家平台，可以exclude出去，以减少apk大小，如无需求，保持默认即可
+
+ 以下仅为示例，切勿全部exclude，否则无法显示广告
+
+```
+    implementation ('com.mjdy.ad:sdk:version'){
+        exclude group: 'com.mjdy.ad', module: 'gdt' // 广点通
+        exclude group: 'com.mjdy.ad', module: 'tt'  // 头条
+        exclude group: 'com.mjdy.ad', module: 'bd'  // 百度
+        exclude group: 'com.mjdy.ad', module: 'ks'  // 快手
+    }
+```
+
+
+### 3.5 错误码
 
 **onAdLoadFail** 方法里提供了 ```ErrorModel``` 参数。
 
@@ -197,6 +198,9 @@ PLATFORM_TT | 4 | 头条
 
 
 # 更改记录
+## 1.9.6
+1. 整合了sdk，去掉sdk控制加载的模式
+
 ## 1.9.0
 1. 优化了代码位的分配
 
