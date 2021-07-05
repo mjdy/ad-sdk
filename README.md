@@ -1,4 +1,4 @@
-# MJ广告SDK－－接入说明文档 V1.9.6
+# MJ广告SDK－－接入说明文档 V2.0.4
 ## 1. SDK集成
 
 
@@ -26,7 +26,7 @@ dependencies {
 		
 		...
 		
-		implementation 'com.mjdy.ad:sdk:1.9.6'
+		implementation 'com.mjdy.ad:sdk:2.0.4'
 
 }
 ```
@@ -107,7 +107,9 @@ sdk自动为指定的posId缓存广告，sdk持有一个广告池的概念，池
 5. 可通过mjAdView.isPreLoad()来获得此次加载，是否为自动预加载
 
 ### 2.2.3 mjAdView
-1. 通过 mjAdView.getPrice() 可以获得当前广告的价格
+- 通过 **mjAdView.getPrice()** 可以获得当前广告的价格
+- 通过 **mjAdView.getProfit()** 可以获得当前广告的分成比例 0-100
+- 通过 **mjAdView.isValid()** 获得当前view是否可用，若返回false ， 请销毁该view，重新请求
 
 ### MJAdConfig
 
@@ -139,7 +141,7 @@ SDK已经处理，无需额外操作
 
 ### 3.4 sdk大小优化
 
-本sdk默认集成了 头条，快手，广点通，百度4家广告平台。如果明确不需要某一家平台，可以exclude出去，以减少apk大小，如无需求，保持默认即可
+本sdk默认集成了 头条，快手，广点通，百度，游可赢 5家广告平台。如果明确不需要某一家平台，可以exclude出去，以减少apk大小，如无需求，保持默认即可
 
  以下仅为示例，切勿全部exclude，否则无法显示广告
 
@@ -149,6 +151,8 @@ SDK已经处理，无需额外操作
         exclude group: 'com.mjdy.ad', module: 'tt'  // 头条
         exclude group: 'com.mjdy.ad', module: 'bd'  // 百度
         exclude group: 'com.mjdy.ad', module: 'ks'  // 快手
+        exclude group: 'com.mjdy.ad', module: 'klevin'  // 游可赢
+
     }
 ```
 
@@ -192,12 +196,18 @@ PLATFORM_GDT | 1 | 广点通
 PLATFORM_BD | 2 | 百度
 PLATFORM_QSZ | 3 | 启示者
 PLATFORM_TT | 4 | 头条
+PLATFORM_KS | 6 | 快手
+PLATFORM_KLEVIN | 9 | 游可赢
+
 
 #### 相应平台错误码
 请参见具体平台的文档。如 广点通sdk文档 or 百度sdk文档
 
 
 # 更改记录
+## 2.0.4
+1. 新增游可赢平台
+
 ## 1.9.6
 1. 整合了sdk，去掉sdk控制加载的模式
 
