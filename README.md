@@ -1,4 +1,4 @@
-# MJ广告SDK－－接入说明文档 V2.0.4
+# MJ广告SDK－－接入说明文档 V2.0.7
 ## 1. SDK集成
 
 
@@ -26,7 +26,7 @@ dependencies {
 		
 		...
 		
-		implementation 'com.mjdy.ad:sdk:2.0.4'
+		implementation 'com.mjdy.ad:sdk:2.0.7'
 
 }
 ```
@@ -205,6 +205,12 @@ PLATFORM_KLEVIN | 9 | 游可赢
 
 
 # 更改记录
+
+## 2.0.7
+1. 快手修复开屏问题
+2. 快手支持插屏
+3. 游可赢支持  模板渲染 开屏，插屏
+
 ## 2.0.4
 1. 新增游可赢平台
 
