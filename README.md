@@ -1,4 +1,4 @@
-# MJ广告SDK－－接入说明文档 V2.0.7
+# MJ广告SDK－－接入说明文档 V2.0.9
 ## 1. SDK集成
 
 
@@ -26,7 +26,7 @@ dependencies {
 		
 		...
 		
-		implementation 'com.mjdy.ad:sdk:2.0.7'
+		implementation 'com.mjdy.ad:sdk:2.0.9'
 
 }
 ```
@@ -90,6 +90,95 @@ dependencies {
 
 ```
 
+**MJAdListener** 为回调接口 ， 默认只强制回调 onAdLoadSuccess , 其他按需加载
+
+```
+
+    /**
+     * 广告加载成功的回调
+     * <p>
+     * adViewList参数极大概率有值，即便如此，也强烈建议进行非空判断
+     * <p>
+     *
+     * @param adViewList
+     */
+    public abstract void onAdLoadSuccess(List<MJAdView> adViewList);
+
+
+    /**
+     * 广告失败
+     *
+     * @param errorModel
+     */
+    public void onAdLoadFail(ErrorModel errorModel) {
+    }
+
+
+    /**
+     * 广告展示
+     */
+    public void onAdShow() {
+
+    }
+
+    /**
+     * 广告点击
+     */
+    public void onAdClicked() {
+    }
+
+    /**
+     * 广告消失的回调。倒计时结束，用户关闭 等等。
+     * <p>
+     * 大多数情况可忽略参数mjAdView。
+     * mjAdView是用于信息流，用户点击关闭后，app端的信息流dataList应该移除这一条
+     *
+     * @param mjAdView
+     */
+    public void onAdDismiss(MJAdView mjAdView) {
+    }
+
+    /**
+     * 视频播放完成
+     */
+    public void onAdVideoPlayFinish() {
+    }
+
+
+    /**
+     * 视频广告已缓存
+     */
+    public void onAdVideoCached() {
+
+    }
+
+
+    /**
+     * 开屏，视频等跳过,部分平台没有该回调。不保证100%有效
+     * 不要被方法名迷惑，所有跳过均在此回调，包括开屏
+     */
+    public void onAdVideoSkip() {
+    }
+
+
+    /**
+     * 奖励视频的回调
+     */
+    public void onAdReward(boolean rewardVerify, int rewardAmount, String rewardName) {
+
+    }
+
+    /**
+     * 自渲染view
+     *
+     * @param view
+     */
+    public void onAdCustomView(View view) {
+
+    }
+```
+
+
 ### 2.2.2 sdk自动预加载
 sdk自动为指定的posId缓存广告，sdk持有一个广告池的概念，池中始终持有一个广告实例。在app层索要广告时，将池中的广告给app层，同时加载一个新的广告，放入池中。这样会提高app层获取广告的效率，但会有资源浪费的情况，且对性能会有影响，切勿滥用，自动预加载的位置，建议不超过6个
 
@@ -110,17 +199,25 @@ sdk自动为指定的posId缓存广告，sdk持有一个广告池的概念，池
 - 通过 **mjAdView.getPrice()** 可以获得当前广告的价格
 - 通过 **mjAdView.getProfit()** 可以获得当前广告的分成比例 0-100
 - 通过 **mjAdView.isValid()** 获得当前view是否可用，若返回false ， 请销毁该view，重新请求
+- 通过 **mjAdView.getInfo()** 获得当前广告实例的详细信息 ，仅用于调试
+
+mjadView.show() 有多种形式
+
+```
+show(ViewGroup viewGroup) // 默认，tag为加载config时的activityName
+show(String tag, ViewGroup viewGroup) // 传入指定tag，用于标记
+```
 
 ### MJAdConfig
 
    字段  | 说明 | 是否必须 | 备注
 ---| --- | --- | ---
 activity | activity | 是| 最好是activity
-posId |  广告位代码 | 是 | 
-width | 宽度 | 否 |  单位dp，默认屏幕宽度dp
+posId |  广告位代码 | 是 |  插槽ID
+width | 宽度 | 否 |  指定广告宽度，单位dp，默认屏幕宽度dp
 adCount | 请求广告数量 | 否| 默认 1
-timeout | 请求广告超时 | 否 | 单位毫秒，默认 3000
-refreshTime | 广告刷新时间 | 否 | 
+isSdkContainer | 是否使用sdk的容器 | 否 | 多用于开屏。true的时候，由sdk弹出activity展示开屏
+layout | 自渲染模式下的自定义view | 否 | R.layout.xxx 。 xml里的id必须按规则来，详细规则联系相关人员
 
 
 
@@ -205,6 +302,10 @@ PLATFORM_KLEVIN | 9 | 游可赢
 
 
 # 更改记录
+
+## 2.0.9
+1. 开屏改为弹出activity
+2. 完善文档
 
 ## 2.0.7
 1. 快手修复开屏问题

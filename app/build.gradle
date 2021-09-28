@@ -31,7 +31,7 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'androidx.appcompat:appcompat:1.0.0'
 
-    implementation 'com.mjdy.ad:sdk:2.0.7'
+    implementation 'com.mjdy.ad:sdk:2.0.9'
 
 
 //  如果有不需要的广告平台，可以选择 exclude 。不能全部exclude，否则无法显示广告
