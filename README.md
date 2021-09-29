@@ -74,7 +74,7 @@ dependencies {
 		    .posId("adPosId")
 		    .build();
 			
-		MJAd.showAd(adConfig, new MJAdListener() {
+		MJAd.loadAd(adConfig, new MJAdListener() {
 			@Override
 			public void onAdLoadSuccess(List<MJAdView> adViewList) {
 			    
@@ -219,7 +219,43 @@ adCount | 请求广告数量 | 否| 默认 1
 isSdkContainer | 是否使用sdk的容器 | 否 | 多用于开屏。true的时候，由sdk弹出activity展示开屏
 layout | 自渲染模式下的自定义view | 否 | R.layout.xxx 。 xml里的id必须按规则来，详细规则联系相关人员
 
+### 内置配置文件
+由于sdk初始化需要时间，app首次安装启动，可能会因为sdk未初始化完，而导致首次开屏广告加载失败。
 
+所以提供内置配置文件功能，只要将首次启动需要展示的的**posId**放在内置配置文件里，即可提高app首次启动 广告展示成功率
+
+内置配置文件命名为 **mj\_ad\_config.json** ，放在 **app/src/main/assets** 目录下，文件内容由相关人员提供
+
+
+```
+示例 
+
+{"data":{"params":"abcdefg"},"result":1,"ts":1614165396066}
+```
+
+### 更多功能
+
+以下功能为非必需功能，有需要则使用。无需求则忽略
+
+### 1. 获取买量信息
+
+- **MJAD.isHavePlan()** 是否为买量用户。true = 是
+- **MJAD.getAccountId()** 获取买量账户id，可能为空
+- **MJAD.getPlanId()** 获取买量计划id，可能为空
+
+### 2. 获取preLoad状态
+- **MJAD.isPreLoadOK()** true = preLoad成功，sdk 广告池里有数据
+
+### 3. 获取oaid
+- **MJAD.getOaid()**  获取oaid，可能为空
+
+### 4. 初始化及激活状态
+
+- **MJAD.setInitListener(MJInitListener mjInitListener)**  设置初始化成功监听。若初始化失败，则无此回调。注意，该回调可能会返回多次（每次启动 以及 各种意外情况自重启时）
+- **MJAD.setActiveListener(MJActiveListener mjActiveListener)**  设置激活监听。激活成功，有此回调，有且仅有一次
+
+### 5. 获取新安装apk的状态
+- **MJAD.isApkSourceOk(String pkgName)**  一般用于app层监听apk安装事件，在得到系统回调时，用此方法判断该app的来源，true = 该app是通过点击sdk的广告下载安装的
 
 ## 3.其他
 ### 3.1 混淆
