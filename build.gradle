@@ -22,6 +22,9 @@ allprojects {
         maven { url "https://jitpack.io" }
         maven { url 'http://maven.7nc.top/repository/mjdy/' }
         maven { url 'https://repo1.maven.org/maven2/' }
+        maven {
+            url "https://artifact.bytedance.com/repository/pangle"
+        }
     }
 }
 

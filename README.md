@@ -1,4 +1,4 @@
-# MJ广告SDK－－接入说明文档 V2.0.9
+# MJ广告SDK－－接入说明文档 V2.1.2
 ## 1. SDK集成
 
 
@@ -12,7 +12,7 @@ allprojects {
 
         maven { url "https://jitpack.io" }
         maven { url 'http://maven.7nc.top/repository/mjdy/' }
-
+        maven { url "https://artifact.bytedance.com/repository/pangle" }
 
     }
 }
@@ -26,7 +26,7 @@ dependencies {
 		
 		...
 		
-		implementation 'com.mjdy.ad:sdk:2.0.9'
+		implementation 'com.mjdy.ad:sdk:2.1.2'
 
 }
 ```
@@ -338,6 +338,10 @@ PLATFORM_KLEVIN | 9 | 游可赢
 
 
 # 更改记录
+
+## 2.1.2
+1. 新增groMore平台
+2. 去掉头条平台
 
 ## 2.0.9
 1. 开屏改为弹出activity
