@@ -1,4 +1,4 @@
-# MJ广告SDK－－接入说明文档 V2.1.2
+# MJ广告SDK－－接入说明文档 V2.1.3
 ## 1. SDK集成
 
 
@@ -26,7 +26,7 @@ dependencies {
 		
 		...
 		
-		implementation 'com.mjdy.ad:sdk:2.1.2'
+		implementation 'com.mjdy.ad:sdk:2.1.3'
 
 }
 ```
@@ -339,7 +339,7 @@ PLATFORM_KLEVIN | 9 | 游可赢
 
 # 更改记录
 
-## 2.1.2
+## 2.1.3
 1. 新增groMore平台
 2. 去掉头条平台
 
