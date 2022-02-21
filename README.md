@@ -1,4 +1,4 @@
-# MJ广告SDK－－接入说明文档 V2.1.3
+# MJ广告SDK－－接入说明文档 V2.1.9
 ## 1. SDK集成
 
 
@@ -26,7 +26,7 @@ dependencies {
 		
 		...
 		
-		implementation 'com.mjdy.ad:sdk:2.1.3'
+		implementation 'com.mjdy.ad:sdk:2.1.9'
 
 }
 ```
@@ -285,6 +285,8 @@ SDK已经处理，无需额外操作
         exclude group: 'com.mjdy.ad', module: 'bd'  // 百度
         exclude group: 'com.mjdy.ad', module: 'ks'  // 快手
         exclude group: 'com.mjdy.ad', module: 'klevin'  // 游可赢
+        exclude group: 'com.mjdy.ad', module: 'mb'  // GroMore
+        exclude group: 'com.mjdy.ad', module: 'jd'  // 京东
 
     }
 ```
@@ -331,6 +333,10 @@ PLATFORM_QSZ | 3 | 启示者
 PLATFORM_TT | 4 | 头条
 PLATFORM_KS | 6 | 快手
 PLATFORM_KLEVIN | 9 | 游可赢
+PLATFORM_MB | 15 | GroMore
+PLATFORM_JD | 16 | 京东
+
+
 
 
 #### 相应平台错误码
@@ -338,6 +344,9 @@ PLATFORM_KLEVIN | 9 | 游可赢
 
 
 # 更改记录
+## 2.1.9
+1. 新增京东平台
+2. 修复GroMore激励视频回调问题
 
 ## 2.1.3
 1. 新增groMore平台
