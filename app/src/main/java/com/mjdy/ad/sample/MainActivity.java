@@ -1,4 +1,4 @@
-package com.mjdy.ad.sample.ui;
+package com.mjdy.ad.sample;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -10,7 +10,6 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.mjdy.ad.sample.R;
 import com.mjdy.ad.sample.utils.LogUtil;
 import com.mobjump.mjadsdk.MJAd;
 import com.mobjump.mjadsdk.adline.interfaces.MJAdListener;
@@ -20,7 +19,7 @@ import com.mobjump.mjadsdk.view.MJAdView;
 
 import java.util.List;
 
-public class AppHandleActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity {
     LinearLayout ll_container;
     Activity activity;
     MJAdView mjAdView;
@@ -31,8 +30,13 @@ public class AppHandleActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.app_handle_activity);
+
+
+        setContentView(R.layout.main_activity);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+        // 可选，获取 PHONE，STORAGE，LOCATION 权限
+        MJAd.requestPermission(this);
 
         ll_container = findViewById(R.id.ll_container);
         tv_info = findViewById(R.id.tv_info);
@@ -140,7 +144,7 @@ public class AppHandleActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if (mjAdView == null) {
                     tv_info.setText("请等待广告加载");
-                    Toast.makeText(AppHandleActivity.this, "请等待广告加载", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "请等待广告加载", Toast.LENGTH_SHORT).show();
                     return;
                 }
                 // 在需要的时机调用show ，传入展示用的容器
