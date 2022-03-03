@@ -1,4 +1,4 @@
-# MJ广告SDK－－接入说明文档 V2.1.9
+# MJ广告SDK－－接入说明文档 V2.2.3
 ## 1. SDK集成
 
 
@@ -26,7 +26,7 @@ dependencies {
 		
 		...
 		
-		implementation 'com.mjdy.ad:sdk:2.1.9'
+		implementation 'com.mjdy.ad:sdk:2.2.3'
 
 }
 ```
@@ -344,6 +344,10 @@ PLATFORM_JD | 16 | 京东
 
 
 # 更改记录
+
+## 2.2.3
+1. 修复缓存问题
+
 ## 2.1.9
 1. 新增京东平台
 2. 修复GroMore激励视频回调问题
