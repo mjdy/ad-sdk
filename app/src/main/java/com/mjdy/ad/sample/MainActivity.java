@@ -2,7 +2,6 @@ package com.mjdy.ad.sample;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -25,15 +24,17 @@ public class MainActivity extends AppCompatActivity {
     MJAdView mjAdView;
     TextView tv_info;
 
-    public static final String POS_ID = "15585712";
+
+//    public static final String POS_ID = "40663297"; // 快手
+//    public static final String POS_ID = "77894185"; // GroMore
+//    public static final String POS_ID = "95041688"; // 优量汇
+    public static final String POS_ID = "15585712"; // 随机
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-
         setContentView(R.layout.main_activity);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         // 可选，获取 PHONE，STORAGE，LOCATION 权限
         MJAd.requestPermission(this);
@@ -56,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
                         .posId(POS_ID)
                         .build();
 
-                MJAd.showAd(adConfig, new MJAdListener() {
+                MJAd.loadAd(adConfig, new MJAdListener() {
                     @Override
                     public void onAdLoadSuccess(List<MJAdView> adViewList) {
                         // 预加载模式，adViewList大概率有值，不过仍建议进行非空判断
@@ -101,7 +102,7 @@ public class MainActivity extends AppCompatActivity {
                         .layout(R.layout.fm_ad_custom_template) // 传入layout，自定义布局。里面的id不要动
                         .build();
 
-                MJAd.showAd(adConfig, new MJAdListener() {
+                MJAd.loadAd(adConfig, new MJAdListener() {
                     @Override
                     public void onAdLoadSuccess(List<MJAdView> adViewList) {
                         // 预加载模式，adViewList大概率有值，不过仍建议进行非空判断
