@@ -1,4 +1,4 @@
-# MJ广告SDK－－接入说明文档 V2.2.5
+# MJ广告SDK－－接入说明文档 V2.2.6
 ## 1. SDK集成
 
 
@@ -26,7 +26,7 @@ dependencies {
 		
 		...
 		
-		implementation 'com.mjdy.ad:sdk:2.2.5'
+		implementation 'com.mjdy.ad:sdk:2.2.6'
 
 }
 ```
@@ -208,16 +208,50 @@ show(ViewGroup viewGroup) // 默认，tag为加载config时的activityName
 show(String tag, ViewGroup viewGroup) // 传入指定tag，用于标记
 ```
 
+## 2.3 自定义广告行为上报
+> 该功能需开通权限，方可使用。开通方式联系运营人员
+
+当app层不需要sdk显示广告，仅需要使用广告行为上报功能时，使用如下方法
+
+```
+    MJAdConfig adConfig = new MJAdConfig.Builder()
+            .activity(MainActivity.this)
+            .posId("posId")
+            .codeId("codeId")
+            .action(MJAdAction.ACTION_SHOW)
+            .price(100)
+            .position(MJAdPosition.POSITION_APP_IN)
+            .build();
+            
+    MJAd.report(adConfig);
+```
+
+其中 **posId** 、 **codeId** 、  **action** 为必填项
+
+**price** 、 **position**  为选填
+
+**activity** 尽可能传当前页面的
+
+具体字段说明参照 MJAdConfig
+
+### 2.3.1
+如果要追踪某个广告代码的完整流程，比如 加载，展示，点击，可以复用 MJAdConfig, 在对应的广告行为之前调用 
+ adConfig.setAction(action) ，然后再次调用  MJAd.report(adConfig) 即可。
+
 ### MJAdConfig
 
    字段  | 说明 | 是否必须 | 备注
 ---| --- | --- | ---
 activity | activity | 是| 最好是activity
-posId |  广告位代码 | 是 |  插槽ID
+posId |  广告位插槽 | 是 |  插槽ID
 width | 宽度 | 否 |  指定广告宽度，单位dp，默认屏幕宽度dp
 adCount | 请求广告数量 | 否| 默认 1
 isSdkContainer | 是否使用sdk的容器 | 否 | 多用于开屏。true的时候，由sdk弹出activity展示开屏
 layout | 自渲染模式下的自定义view | 否 | R.layout.xxx 。 xml里的id必须按规则来，详细规则联系相关人员
+action |  广告行为 | 否 |  自定义上报时 必填。具体值参见 MJAdAction
+codeId |  广告代码Id | 否 |  自定义上报时 必填
+price |  广告位价格| 否 |  自定义上报时 选填。千次展示cpm
+position |  广告位位置 | 否 | 自定义上报时  选填。体内 or 体外。具体值参见 MJAdPosition
 
 ### 内置配置文件
 由于sdk初始化需要时间，app首次安装启动，可能会因为sdk未初始化完，而导致首次开屏广告加载失败。
@@ -357,6 +391,8 @@ Gromore | 3.2.2.2 |
 
 
 # 更改记录
+## 2.2.6
+1. 新增自定义上报
 
 ## 2.2.5
 1. 升级各平台sdk
