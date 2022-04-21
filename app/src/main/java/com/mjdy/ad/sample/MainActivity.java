@@ -7,7 +7,6 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.appcompat.app.AppCompatActivity;
 
 import com.mjdy.ad.sample.utils.LogUtil;
 import com.mobjump.mjadsdk.MJAd;
@@ -18,7 +17,7 @@ import com.mobjump.mjadsdk.view.MJAdView;
 
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends Activity {
     LinearLayout ll_container;
     Activity activity;
     MJAdView mjAdView;
