@@ -5,9 +5,24 @@ buildscript {
     repositories {
         google()
         jcenter()
+        mavenCentral()
+        maven { url "https://maven.admobile.top/repository/maven-releases/" }
+        maven { url 'https://dl.bintray.com/umsdk/release' }
+        maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+        maven { url 'http://developer.huawei.com/repo/' }
+//        maven { url 'https://dl.bintray.com/umsdk/release' }
+
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.3.3'
+        classpath 'com.novoda:bintray-release:0.3.4'
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+        // classpath 'com.antfortune.freeline:gradle:0.8.7'
+
+        classpath 'org.greenrobot:greendao-gradle-plugin:3.2.2'
+//        classpath 'com.huawei.agconnect:agcp:1.0.0.300'
+//        classpath 'com.huawei.agconnect:agcp:1.3.1.300'
 
 
         // NOTE: Do not place your application dependencies here; they belong
@@ -19,12 +34,25 @@ allprojects {
     repositories {
         google()
         jcenter()
+        maven {
+            url 'https://maven.aliyun.com/repository/public/'
+        }
+        mavenCentral()
         maven { url "https://jitpack.io" }
         maven { url 'http://maven.7nc.top/repository/mjdy/' }
         maven { url 'https://repo1.maven.org/maven2/' }
         maven {
             url "https://artifact.bytedance.com/repository/pangle"
         }
+
+        maven { url "https://maven.admobile.top/repository/maven-releases/" }
+        maven { url 'http://maven.aliyun.com/nexus/content/repositories/releases/' }
+        maven { url "https://jitpack.io" }
+        maven { url 'http://developer.huawei.com/repo/' }
+        maven { url 'https://dl.bintray.com/umsdk/release' }
+        maven { url "http://101.37.191.20:9091/repository/maven-releases/" }
+//        maven { url 'https://dl.bintray.com/umsdk/release' }
+
     }
 }
 
