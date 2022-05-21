@@ -31,11 +31,11 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'androidx.appcompat:appcompat:1.0.0'
 
-    implementation 'com.mjdy.ad:sdk:2.2.7'
+    implementation 'com.mjdy.ad:sdk:2.2.8'
 
 
 //  如果有不需要的广告平台，可以选择 exclude 。不能全部exclude，否则无法显示广告
-//    implementation ('com.mjdy.ad:sdk:2.2.7'){
+//    implementation ('com.mjdy.ad:sdk:2.2.8'){
 //        exclude group: 'com.mjdy.ad', module: 'gdt' // 广点通
 //        exclude group: 'com.mjdy.ad', module: 'tt'  // 头条
 //        exclude group: 'com.mjdy.ad', module: 'bd'  // 百度

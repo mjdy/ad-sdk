@@ -1,4 +1,4 @@
-# MJ广告SDK－－接入说明文档 V2.2.7
+# MJ广告SDK－－接入说明文档 V2.2.8
 ## 1. SDK集成
 
 
@@ -26,7 +26,7 @@ dependencies {
 		
 		...
 		
-		implementation 'com.mjdy.ad:sdk:2.2.7'
+		implementation 'com.mjdy.ad:sdk:2.2.8'
 
 }
 ```
@@ -391,6 +391,9 @@ Gromore | 3.2.2.2 |
 
 
 # 更改记录
+## 2.2.8
+1. 修复配置文件请求过于频繁
+
 ## 2.2.7
 1. 适配android 11
 
