@@ -29,19 +29,25 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation 'androidx.appcompat:appcompat:1.0.0'
 
-    implementation 'com.mjdy.ad:sdk:2.2.8'
+    // 如果集成快手平台，以下二选一。
+//    def support_version = "28.0.0"
+//    implementation "com.android.support:appcompat-v7:$support_version"
+//    implementation "com.android.support:recyclerview-v7:$support_version"
 
+    def version = "1.0.0"
+    implementation "androidx.appcompat:appcompat:$version"
+    implementation "androidx.recyclerview:recyclerview:$version"
+
+    implementation 'com.mjdy.ad:sdk:2.3.6'
 
 //  如果有不需要的广告平台，可以选择 exclude 。不能全部exclude，否则无法显示广告
-//    implementation ('com.mjdy.ad:sdk:2.2.8'){
+//    implementation ('com.mjdy.ad:sdk:2.3.6'){
 //        exclude group: 'com.mjdy.ad', module: 'gdt' // 广点通
-//        exclude group: 'com.mjdy.ad', module: 'tt'  // 头条
 //        exclude group: 'com.mjdy.ad', module: 'bd'  // 百度
 //        exclude group: 'com.mjdy.ad', module: 'ks'  // 快手
 //        exclude group: 'com.mjdy.ad', module: 'klevin'  // 游可赢
-//        exclude group: 'com.mjdy.ad', module: 'mb'  // GroMore
+//        exclude group: 'com.mjdy.ad', module: 'mb'  // GroMore/头条
 //        exclude group: 'com.mjdy.ad', module: 'jd'  // 京东
 //    }
 

@@ -1,4 +1,4 @@
-# MJ广告SDK－－接入说明文档 V2.2.8
+# MJ广告SDK－－接入说明文档 V2.3.6
 ## 1. SDK集成
 
 
@@ -26,7 +26,7 @@ dependencies {
 		
 		...
 		
-		implementation 'com.mjdy.ad:sdk:2.2.8'
+		implementation 'com.mjdy.ad:sdk:2.3.6'
 
 }
 ```
@@ -35,22 +35,43 @@ dependencies {
 ## 2. 接入代码
 ### 2.1 初始化
 
-
-
-
-
-
 在application的onCreate里面加入
 
 ```
- MJAd.init(this,"yourAppId","yourChannel");
+ MJAd.init(this,"yourAppId");
 ```
 > yourAppId 需要替换为您的ID，非空
 > 
-> yourChannel 为自定义渠道，可为空
 
+#### 额外配置初始化(channel 及 隐私配置)
 
+构造一个 **MJSdkConfig** ，通过各种 **set** 函数来设置
 
+```
+        MJSdkConfig mjSdkConfig = new MJSdkConfig();
+        mjSdkConfig.setChannel("yourChannel");
+
+        // 权限控制。1是允许，0是拒绝，不设置是默认
+        mjSdkConfig.setCanUsePhoneState(1); // 手机信息，如imei
+        mjSdkConfig.setCanUseLocation(1);  // 位置信息
+        mjSdkConfig.setCanUseStorage(1); // 存储权限
+        mjSdkConfig.setCanUseAndroidId(1); // androidId
+        mjSdkConfig.setCanUseAppList(1); // app列表
+        mjSdkConfig.setCanUseIp(1); // ip
+        mjSdkConfig.setCanUseMacAddress(0); // mac地址
+        mjSdkConfig.setCanUseWifiState(0); // wifi状态
+        mjSdkConfig.setCanUseLimitPersonalAds(0); // 个性化推荐
+        mjSdkConfig.setCanUseProgramRecommend(0); // 程序化推荐
+
+        // 以上有设置为0的，建议主动设置下面对应值
+        mjSdkConfig.setImei("00000000000000"); // 主动设置imei
+        mjSdkConfig.setOaid("000000000000000"); // 主动设置oaid
+        mjSdkConfig.setAndroidId("01234567"); // 主动设置androidId
+        mjSdkConfig.setMacAddress("00.00.00.00.00"); //主动设置mac
+        mjSdkConfig.setIp("1.1.1.1"); // 主动设置ip
+
+        MJAd.init(this, "appId", mjSdkConfig); 
+```
 
 ####  如果您打包App时的targetSdkVersion >= 23：请先获取到SDK要求的所有权限，然后再调用SDK的广告接口。需要动态申请的权限有 
 ```
@@ -199,7 +220,10 @@ sdk自动为指定的posId缓存广告，sdk持有一个广告池的概念，池
 - 通过 **mjAdView.getPrice()** 可以获得当前广告的价格
 - 通过 **mjAdView.getProfit()** 可以获得当前广告的分成比例 0-100
 - 通过 **mjAdView.isValid()** 获得当前view是否可用，若返回false ， 请销毁该view，重新请求
+- 通过 **mjAdView.getPlatform()** 获得当前广告平台。对应值参照 平台码
+- 通过 **mjAdView.getCodeId()** 获得当前广告代码Id
 - 通过 **mjAdView.getInfo()** 获得当前广告实例的详细信息 ，仅用于调试
+
 
 mjadView.show() 有多种形式
 
@@ -315,11 +339,10 @@ SDK已经处理，无需额外操作
 ```
     implementation ('com.mjdy.ad:sdk:version'){
         exclude group: 'com.mjdy.ad', module: 'gdt' // 广点通
-        exclude group: 'com.mjdy.ad', module: 'tt'  // 头条
         exclude group: 'com.mjdy.ad', module: 'bd'  // 百度
         exclude group: 'com.mjdy.ad', module: 'ks'  // 快手
         exclude group: 'com.mjdy.ad', module: 'klevin'  // 游可赢
-        exclude group: 'com.mjdy.ad', module: 'mb'  // GroMore
+        exclude group: 'com.mjdy.ad', module: 'mb'  // GroMore/头条
         exclude group: 'com.mjdy.ad', module: 'jd'  // 京东
 
     }
@@ -381,16 +404,24 @@ PLATFORM_JD | 16 | 京东
 
 平台   | 版本号 | 
 ---| --- | 
-Gromore | 3.2.2.2 |  
+Gromore | 3.5.1.3 |  
 优量汇 | 4.453.1323 | 
-快手 | 3.3.22.3 | 
+快手 | 3.3.27.1 | 
 游可赢 | 2.3.0.17 | 
 京东 | 1.4.6 |  
+百度 | 9.23 |  
+
 
 > 以上为最新版肥猫sdk，若部分平台加载不出广告，建议使用最新版肥猫sdk
 
 
 # 更改记录
+## 2.3.6
+1. 升级百度sdk到9.23
+2. 升级快手sdk到3.3.27.1
+3. 升级gromore到3.5.1.3
+4. 新增隐私权限控制
+
 ## 2.2.8
 1. 修复配置文件请求过于频繁
 
