@@ -1,11 +1,11 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 28
+    compileSdkVersion 31
     defaultConfig {
         applicationId "com.mjdy.ad.sample"
         minSdkVersion 21
-        targetSdkVersion 28
+        targetSdkVersion 31
         multiDexEnabled true
         versionCode 1
         versionName "1.0"
@@ -35,14 +35,13 @@ dependencies {
 //    implementation "com.android.support:appcompat-v7:$support_version"
 //    implementation "com.android.support:recyclerview-v7:$support_version"
 
-    def version = "1.0.0"
-    implementation "androidx.appcompat:appcompat:$version"
-    implementation "androidx.recyclerview:recyclerview:$version"
+    implementation "androidx.appcompat:appcompat:1.0.0"
+    implementation "androidx.recyclerview:recyclerview:1.0.0"
 
-    implementation 'com.mjdy.ad:sdk:2.3.6'
+    implementation 'com.mjdy.ad:sdk:2.3.7'
 
 //  如果有不需要的广告平台，可以选择 exclude 。不能全部exclude，否则无法显示广告
-//    implementation ('com.mjdy.ad:sdk:2.3.6'){
+//    implementation ('com.mjdy.ad:sdk:2.3.7'){
 //        exclude group: 'com.mjdy.ad', module: 'gdt' // 广点通
 //        exclude group: 'com.mjdy.ad', module: 'bd'  // 百度
 //        exclude group: 'com.mjdy.ad', module: 'ks'  // 快手
